@@ -7,14 +7,14 @@ tags:
   - ローカルLLM
   - many-ai-cli
 private: false
-updated_at: '2026-06-20T18:47:18+09:00'
+updated_at: '2026-06-20T19:24:08+09:00'
 id: 01256d3beb6db3a698a7
 organization_url_name: null
 slide: false
 ignorePublish: false
 ---
 
-![](./images/2026-06-19_hyperv-ollama-host_hero.png)
+![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-06-19_hyperv-ollama-host_hero.png)
 
 ## 結論から
 
@@ -50,7 +50,7 @@ Ollama は入る。モデルも入る。API もそれっぽく返る。けれど
 
 これを 4 回やった。
 
-![](./images/2026-06-19_hyperv-ollama-host_fig1.png)
+![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-06-19_hyperv-ollama-host_fig1.png)
 
 ## 考え方をひっくり返した
 
@@ -84,7 +84,7 @@ Ollama Local は、もともと `localhost:11434` を見に行く前提でした
 
 「ローカル」と言っているけど、誰から見たローカルなのか。ここを間違えると、ずっと違う住所を見に行く。
 
-![](./images/2026-06-19_hyperv-ollama-host_fig2.png)
+![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-06-19_hyperv-ollama-host_fig2.png)
 
 ## many-ai-cli 側の設定変更
 
