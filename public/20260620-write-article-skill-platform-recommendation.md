@@ -1,16 +1,17 @@
 ---
-title: "note だけに書いていた記事スキルを Qiita・Zenn にも対応させた話"
+title: note だけに書いていた記事スキルを Qiita・Zenn にも対応させた話
 tags:
-  - ClaudeCode
-  - Claude
-  - 生成AI
-  - AIエージェント
   - 個人開発
+  - 生成AI
+  - Claude
+  - AIエージェント
+  - ClaudeCode
 private: false
-updated_at: ''
-id: ''
+updated_at: '2026-06-20T23:14:50+09:00'
+id: 562da7ecf9bc4dc18f96
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260620_write-article-skill-recommendation_hero.png)
