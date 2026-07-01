@@ -7,6 +7,11 @@ tags:
   - 戦略
   - ポエム
 private: false
+updated_at: ''
+id: ''
+organization_url_name: ''
+slide: false
+ignorePublish: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260701-strategy-vs-tactics-system-design_hero.png)
