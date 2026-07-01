@@ -1,15 +1,15 @@
 ---
 title: 「機能は増えたのに、業務は楽にならない」を戦略と戦術の 5 階層で読み解く（MO作戦・珊瑚海海戦からの学び）
 tags:
-  - システム設計
-  - 要件定義
-  - プロジェクト管理
-  - 戦略
   - ポエム
+  - プロジェクト管理
+  - 要件定義
+  - システム設計
+  - 戦略
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-01T13:20:09+09:00'
+id: 414cd0733345efed85ac
+organization_url_name: null
 slide: false
 ignorePublish: false
 ---
