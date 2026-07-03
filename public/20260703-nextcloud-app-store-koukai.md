@@ -1,13 +1,13 @@
 ---
-title: "Nextcloud App Store に個人アプリを公開するときにハマったポイントまとめ"
+title: Nextcloud App Store に個人アプリを公開するときにハマったポイントまとめ
 tags:
-  - Nextcloud
-  - OSS
   - PHP
+  - Security
+  - OSS
+  - nextcloud
   - GitHubActions
-  - セキュリティ
 private: false
-updated_at: '2026-07-03T13:26:17+09:00'
+updated_at: '2026-07-03T14:29:21+09:00'
 id: a32b3affeffd49acb2b4
 organization_url_name: null
 slide: false
