@@ -1,17 +1,19 @@
 ---
-title: "Nextcloud App Store に個人アプリを公開するときにハマったポイントまとめ"
+title: Nextcloud App Store に個人アプリを公開するときにハマったポイントまとめ
 tags:
-  - Nextcloud
-  - OSS
   - PHP
+  - Security
+  - OSS
+  - nextcloud
   - GitHubActions
-  - セキュリティ
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-03T13:26:17+09:00'
+id: a32b3affeffd49acb2b4
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Nextcloud 上に置いた `.html` ファイルを、安全にプレビューするだけの小さなアプリを作って、Nextcloud App Store（公式のアプリストア）に公開しました。作業自体は 1 日で終わったのですが、途中でハマりどころがいくつかあったので、同じことをやる人向けに残しておきます。
