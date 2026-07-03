@@ -12,13 +12,13 @@ id: a32b3affeffd49acb2b4
 organization_url_name: null
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
-Nextcloud 上に置いた `.html` ファイルを、安全にプレビューするだけの小さなアプリを作って、Nextcloud App Store（公式のアプリストア）に公開しました。作業自体は 1 日で終わったのですが、途中でハマりどころがいくつかあったので、同じことをやる人向けに残しておきます。
+![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260703-nextcloud-app-store-koukai_hero.png)
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260703-nextcloud-app-store-koukai_infographic.png)
+
+Nextcloud 上に置いた `.html` ファイルを、安全にプレビューするだけの小さなアプリを作って、Nextcloud App Store（公式のアプリストア）に公開しました。作業自体は 1 日で終わったのですが、途中でハマりどころがいくつかあったので、同じことをやる人向けに残しておきます。
 
 ## 作ったもの
 
@@ -122,8 +122,6 @@ displayName: () => t('safe_html_viewer', 'Safe HTML preview'),
 ```
 
 自作アプリを最初から国際化前提で書いていないと、こういう取りこぼしが出ます。
-
-![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260703-nextcloud-app-store-koukai_hero.png)
 
 ## 公開前の実機検証は使い捨てコンテナで
 
