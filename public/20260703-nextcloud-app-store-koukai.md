@@ -7,11 +7,13 @@ tags:
   - nextcloud
   - GitHubActions
 private: false
-updated_at: '2026-07-03T14:29:21+09:00'
+updated_at: '2026-07-03T14:57:23+09:00'
 id: a32b3affeffd49acb2b4
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260703-nextcloud-app-store-koukai_hero.png)
