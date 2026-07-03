@@ -1,11 +1,11 @@
 ---
-title: Nextcloud App Store に個人アプリを公開するときにハマったポイントまとめ
+title: "Nextcloud App Store に個人アプリを公開するときにハマったポイントまとめ"
 tags:
-  - PHP
-  - Security
+  - Nextcloud
   - OSS
-  - nextcloud
+  - PHP
   - GitHubActions
+  - セキュリティ
 private: false
 updated_at: '2026-07-03T13:26:17+09:00'
 id: a32b3affeffd49acb2b4
@@ -17,6 +17,8 @@ agreed_posting_campaign_term: false
 ---
 
 Nextcloud 上に置いた `.html` ファイルを、安全にプレビューするだけの小さなアプリを作って、Nextcloud App Store（公式のアプリストア）に公開しました。作業自体は 1 日で終わったのですが、途中でハマりどころがいくつかあったので、同じことをやる人向けに残しておきます。
+
+![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260703-nextcloud-app-store-koukai_infographic.png)
 
 ## 作ったもの
 
@@ -198,7 +200,7 @@ jobs:
 
 ---
 
-※ ヘッダー画像は AI（画像生成）で作成しています。
+※ ヘッダー画像とインフォグラフィックは AI（画像生成）で作成しています。
 
 書いた人: ishizakahiroshi
 群馬の北部で、保護猫2匹と暮らす、在宅エンジニア（何でも屋）
