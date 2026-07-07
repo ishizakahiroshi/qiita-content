@@ -1,16 +1,18 @@
 ---
-title: "PHP 8.3 の JIT に「string を渡したのに string 型じゃない」と怒られて全ページ 500 になった話"
+title: PHP 8.3 の JIT に「string を渡したのに string 型じゃない」と怒られて全ページ 500 になった話
 tags:
   - PHP
-  - Nextcloud
-  - OPcache
-  - JIT
+  - jit
+  - opcache
+  - nextcloud
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-07T10:49:22+09:00'
+id: b8d5bb5e323f03ec8200
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 朝、Nextcloud の管理画面を開いたら、ダッシュボードが真っ黒な「このページは動作していません」に変わっていました。HTTP 500。トップも設定もファイル一覧も、どこを開いても 500。前日まで普通に動いていたものが、一晩で全滅していました。
