@@ -23,7 +23,7 @@ agreed_posting_campaign_term: false
 
 ![PHP 8.3 JIT の罠 ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-07_php83-jit-preg-match-bug_hero.png)
 
-![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-07_php83-jit-preg-match-bug_infographic.png)
+![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-07_php83-jit-preg-match-bug_infographic_v2.png)
 
 ## 「アプリを入れた直後」だったので、アプリを疑った
 
