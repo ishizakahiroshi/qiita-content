@@ -1,16 +1,18 @@
 ---
-title: "OneDrive を消したのにデスクトップが OneDrive のまま。犯人はレジストリの既知フォルダー設定だった"
+title: OneDrive を消したのにデスクトップが OneDrive のまま。犯人はレジストリの既知フォルダー設定だった
 tags:
   - Windows
+  - トラブルシューティング
   - OneDrive
   - レジストリ
-  - トラブルシューティング
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-07T12:38:42+09:00'
+id: 91489b13b6983043e39e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 Windows 11 で OneDrive をアンインストールした後、エクスプローラーのクイックアクセスを整理していたら、デスクトップの参照先がなぜか二重になってしまいました。「OneDrive を消したのにデスクトップが OneDrive のまま」という、検索してもドンピシャの記事が出てこないやつです。最終的な原因は Known Folder（既知フォルダー）と User Shell Folders というレジストリの設定でした。同じ状態でハマっている人のために、切り分けの流れをそのまま残しておきます。
