@@ -1,17 +1,19 @@
 ---
-title: "echo password | sudo -S は危ない。認証キャッシュでパスワードがファイルに漏れることがある"
+title: echo password | sudo -S は危ない。認証キャッシュでパスワードがファイルに漏れることがある
 tags:
-  - sudo
-  - Security
   - ShellScript
   - Linux
+  - Security
+  - sudo
   - 運用
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-07T15:45:27+09:00'
+id: b8cf987e4d3f9bd3a678
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![sudo -S の落とし穴 ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-07_sudo-s-stdin-password-leak_hero.png)
