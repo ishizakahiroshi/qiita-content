@@ -18,6 +18,10 @@ agreed_posting_campaign_term: false
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-08_codex-wsl-bash_hero.png)
 
+:::note info
+この記事は **Windows で Codex CLI を使っている人向け**です。macOS / Linux では起きない問題なので、該当しない方はここで閉じて大丈夫です。
+:::
+
 Windows で Codex CLI に .sh スクリプトを実行させたら、頼んでもいない WSL が立ち上がって失敗しました。結論から書くと、`~/.codex/config.toml` にこれを足せば直ります。
 
 ```toml
