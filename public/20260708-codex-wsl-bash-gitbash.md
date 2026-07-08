@@ -1,17 +1,19 @@
 ---
-title: "Windows の Codex CLI が WSL bash を勝手に使う問題を、Git Bash に固定して解決する"
+title: Windows の Codex CLI が WSL bash を勝手に使う問題を、Git Bash に固定して解決する
 tags:
   - Windows
-  - WSL
   - gitbash
+  - WSL
   - OpenAI
-  - Codex
+  - codex
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-08T23:50:21+09:00'
+id: acec7f7c24db713cfcbe
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-08_codex-wsl-bash_hero.png)
