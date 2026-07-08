@@ -7,7 +7,7 @@ tags:
   - OpenAI
   - codex
 private: false
-updated_at: '2026-07-09T00:03:33+09:00'
+updated_at: '2026-07-09T00:08:09+09:00'
 id: acec7f7c24db713cfcbe
 organization_url_name: null
 slide: false
