@@ -99,21 +99,29 @@ MINGW64_NT-10.0-26200 xxxx 3.6.7 x86_64 Msys
 
 `MINGW64_NT`(= Git Bash / MSYS)が返れば固定成功。`Linux` が返ったら、まだ WSL に落ちています。
 
-## ちなみに他の AI CLI はどうなのか
+## ちなみに他の AI エージェントはどうなのか
 
-同じ Windows マシンで使っている他の AI コーディング CLI も気になって調べました。
+同じ Windows マシンで使っている他の AI コーディングエージェントも気になって調べました。すると「Codex 特有の癖」だと思っていたこの問題、実はそうでもありませんでした。
+
+問題が起きない組:
 
 - **Claude Code**: Bash ツールがハーネス側で Git Bash に固定されていて、モデルの判断で WSL に落ちる経路がそもそもない
 - **Copilot CLI**: Windows ネイティブでは PowerShell 実行(逆に Git Bash を強制する公式設定がない、という不満が [community discussion](https://github.com/orgs/community/discussions/189318) に出ています)
 - **Grok CLI**: PowerShell 用のネイティブインストーラーが配布されていて、これも PowerShell 実行
 
-「bash を自前で解決しようとして WSL を掴む」のは Codex 特有の挙動でした。裏を返すと Codex だけが bash を積極的に使おうとしてくれるわけで、直ってしまえばそこは長所なのかもしれません。
+同じ穴に落ちている組:
+
+- **Cursor(Agent)**: 「既定の統合ターミナルを Git Bash にしているのに、Agent のコマンド実行だけ WSL で走る」という今回とそっくりの報告が[公式フォーラムの Bug Reports](https://forum.cursor.com/t/agent-command-execution-uses-wsl-instead-of-the-windows-default-integrated-terminal-git-bash/160196) に上がっています
+- **opencode**: `SHELL` 環境変数を Git Bash 指定(`OPENCODE_GIT_BASH_PATH`)より優先してしまい WSL bash を掴む、という報告([#8396](https://github.com/anomalyco/opencode/issues/8396))があり、[Git Bash / cmd / PowerShell を意識したシェル選択の改善提案](https://github.com/anomalyco/opencode/issues/16479)も出ています
+
+つまり「bash を積極的に使おうとするエージェントが、Windows で bash を探すと WSL ランチャーに当たる」という構図は、Codex に限らないこの環境の共通の落とし穴でした。PowerShell に閉じている Copilot や Grok が安全なのは、裏を返せば bash を使いにいかないからです。
 
 ## まとめ
 
 - 現象: Codex CLI が .sh 実行時に PATH を無視して WSL bash を起動する([#3159](https://github.com/openai/codex/issues/3159))
 - 対策: `~/.codex/config.toml` に `[windows] agent_shell = "git-bash"`([#16717](https://github.com/openai/codex/issues/16717) で実装)、保険でグローバル AGENTS.md にも WSL 禁止を明記
 - 確認: `uname -a` が `MINGW64_NT` を返せば OK
+- 同じ構図は Cursor(Agent) や opencode でも報告されていて、Windows + AI エージェント共通の落とし穴
 
 WSL は残したい、でも AI に勝手に起動されたくない。そういう運用の人の参考になれば。
 
