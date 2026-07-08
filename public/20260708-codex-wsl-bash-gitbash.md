@@ -22,6 +22,13 @@ agreed_posting_campaign_term: false
 この記事は **Windows で Codex CLI を使っている人向け**です。macOS / Linux では起きない問題なので、該当しない方はここで閉じて大丈夫です。
 :::
 
+動作環境:
+
+- Windows 11 Pro (x64)
+- WSL2 インストール済み(**これが発症の前提条件**。WSL を入れていない環境では起きません)
+- Git for Windows インストール済み(Git Bash が PATH に通っている)
+- codex-cli 0.140.0 系(npm レジストリ版を pnpm でグローバルインストール)
+
 Windows で Codex CLI に .sh スクリプトを実行させたら、頼んでもいない WSL が立ち上がって失敗しました。結論から書くと、`~/.codex/config.toml` にこれを足せば直ります。
 
 ```toml
