@@ -1,17 +1,19 @@
 ---
-title: "TypeScript 7（Go 移植版）がリリース。何が速くなって、誰が嬉しいのかを整理する"
+title: TypeScript 7（Go 移植版）がリリース。何が速くなって、誰が嬉しいのかを整理する
 tags:
+  - JavaScript
+  - Go
+  - 開発環境
   - TypeScript
   - tsgo
-  - Go
-  - JavaScript
-  - 開発環境
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-09T10:00:51+09:00'
+id: cc1a155894db8a90087d
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 結論から書きます。TypeScript 7 になっても、TypeScript で作られたアプリを使うエンドユーザーは 1 ミリも嬉しくなりません。速くなるのは開発者の待ち時間です。ビルド、型チェック、エディタの反応。そこが桁で縮みます。
