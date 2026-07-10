@@ -1,17 +1,19 @@
 ---
-title: "NotebookLM の音声概要を YouTube へ自動投稿する。ffmpeg + YouTube Data API v3 の小さなパイプライン"
+title: NotebookLM の音声概要を YouTube へ自動投稿する。ffmpeg + YouTube Data API v3 の小さなパイプライン
 tags:
-  - YouTube
-  - NotebookLM
-  - ffmpeg
   - Python
+  - ffmpeg
+  - YouTube
   - GoogleCloud
+  - NotebookLM
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-10T12:50:21+09:00'
+id: 53ca710329f24f5ba3a8
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![記事が、ラジオになる ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-10_youtube-audio-auto-deploy_hero.png)
