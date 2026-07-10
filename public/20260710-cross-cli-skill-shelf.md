@@ -1,17 +1,21 @@
 ---
-title: "Claude Code / Codex / Cursor / Copilot / OpenCode で同じ Agent Skills を共有する。正本 1 箇所 + リンクの設計"
+title: >-
+  Claude Code / Codex / Cursor / Copilot / OpenCode で同じ Agent Skills を共有する。正本 1
+  箇所 + リンクの設計
 tags:
+  - AI
+  - cursor
+  - GitHubCopilot
   - ClaudeCode
   - AgentSkills
-  - GitHubCopilot
-  - cursor
-  - AI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-10T11:01:40+09:00'
+id: 6821655d5af59a32e50c
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![スキル棚は、一つでいい ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-10_cross-cli-skill-shelf_hero.png)
