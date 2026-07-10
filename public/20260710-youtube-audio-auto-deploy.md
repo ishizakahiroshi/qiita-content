@@ -7,7 +7,7 @@ tags:
   - GoogleCloud
   - NotebookLM
 private: false
-updated_at: '2026-07-10T12:50:21+09:00'
+updated_at: '2026-07-10T12:54:49+09:00'
 id: 53ca710329f24f5ba3a8
 organization_url_name: null
 slide: false
