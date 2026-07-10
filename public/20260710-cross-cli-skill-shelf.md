@@ -22,6 +22,10 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-10_cross-cli-skill-shelf_infographic.png)
 
+この記事の音声版（AI ラジオ解説・17 分）もあります:
+
+https://youtu.be/Ei3EB3W4tvM
+
 手元の AI コーディング CLI、数えたら 6 本ありました。Claude Code、OpenAI Codex CLI、Cursor Agent、GitHub Copilot CLI、OpenCode、Grok Build。そしてこの 1 年で、どれもが **Agent Skills**（`SKILL.md` を持つフォルダ）を扱えるようになってきました。
 
 便利になった一方で、skill の「置き場」がバラバラという問題が出てきます。この記事は、それを **正本 1 箇所 + リンク（Windows ならジャンクション）** で解決したときの設計判断のメモです。
