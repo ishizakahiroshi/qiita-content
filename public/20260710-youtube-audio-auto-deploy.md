@@ -20,6 +20,10 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-10_youtube-audio-auto-deploy_infographic.png)
 
+この記事の音声版（AI ラジオ解説・19 分）もあります。この動画自体が本記事の仕組みで投稿されたものです:
+
+https://youtu.be/9HOONL69hNY
+
 技術記事を書き終えたあと、その md を NotebookLM に食わせると 17 分のラジオ風音声（音声概要 / Audio Overview）ができました。これが思ったより聞ける。じゃあ YouTube にも置きたい。でも毎回手でアップロードするのは絶対に続かない。
 
 というわけで、**音声 m4a + 記事のヘッダー画像 1 枚 → YouTube 公開** までをコマンド 2 発にした話です。ffmpeg と YouTube Data API v3 の組み合わせで、スクリプトは合計 150 行くらい。OAuth まわりで 3 回ハマったので、そこも隠さず書きます。
