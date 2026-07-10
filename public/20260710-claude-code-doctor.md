@@ -1,17 +1,19 @@
 ---
-title: "30 個のスキルを積んだ Claude Code に /doctor をかけて、棚卸ししてみた"
+title: 30 個のスキルを積んだ Claude Code に /doctor をかけて、棚卸ししてみた
 tags:
-  - ClaudeCode
-  - AI
   - CLI
-  - Skill
+  - AI
   - 生産性
+  - SKILL
+  - ClaudeCode
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-10T16:25:59+09:00'
+id: c114346e08dc1f382b0e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![30個のスキル棚を /doctor で棚卸しするヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-10_claude-code-doctor_hero.png)
