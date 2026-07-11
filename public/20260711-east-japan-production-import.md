@@ -1,17 +1,19 @@
 ---
-title: "サブエージェント120本が集めた学校データを本番投入したら、想定外が5連発だった話"
+title: サブエージェント120本が集めた学校データを本番投入したら、想定外が5連発だった話
 tags:
-  - ClaudeCode
   - PostgreSQL
-  - Supabase
   - 個人開発
+  - Supabase
   - データ検証
+  - ClaudeCode
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-11T14:19:09+09:00'
+id: 0bc0767de1ba66a5fb13
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-11_east-japan-import_hero.png)
