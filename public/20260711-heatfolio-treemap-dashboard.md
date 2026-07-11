@@ -1,17 +1,19 @@
 ---
-title: "口座連携なしで、保有資産をtreemapで俯瞰するローカル完結ダッシュボードの設計"
+title: 口座連携なしで、保有資産をtreemapで俯瞰するローカル完結ダッシュボードの設計
 tags:
-  - 個人開発
   - JavaScript
-  - Tailscale
   - YahooFinance
+  - 個人開発
   - 資産管理
+  - tailscale
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-11T15:06:18+09:00'
+id: b5da260733e416085421
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/heatfolio-hero.png)
