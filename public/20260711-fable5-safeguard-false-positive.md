@@ -1,17 +1,19 @@
 ---
-title: "作業そのものは無害なのに、AIの安全装置が「振り返り」で誤発火した話"
+title: 作業そのものは無害なのに、AIの安全装置が「振り返り」で誤発火した話
 tags:
+  - Security
   - AI
-  - Claude
   - 生成AI
-  - セキュリティ
   - LLM
+  - Claude
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-11T16:53:09+09:00'
+id: f2915b037e517fd2787d
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260711-fable5-safeguard-false-positive_hero.png)
