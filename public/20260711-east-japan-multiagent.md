@@ -1,17 +1,19 @@
 ---
-title: "サブエージェント約120本を指揮して、東日本13道県・約1,300校の学校データ整備を2日で終えた話"
+title: 'サブエージェント約120本を指揮して、東日本13道県・約1,300校の学校データ整備を2日で終えた話'
 tags:
-  - ClaudeCode
-  - マルチエージェント
-  - LLM
   - 個人開発
+  - LLM
+  - マルチエージェント
+  - ClaudeCode
   - データ整備
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-11T11:00:12+09:00'
+id: 52d8085452719e8fdaea
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-11_east-japan-multiagent_hero.png)
