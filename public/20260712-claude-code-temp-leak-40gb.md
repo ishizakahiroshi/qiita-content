@@ -92,8 +92,8 @@ rg -a -o -N "[A-Za-z0-9_-]{4,}\.pdb" <対象ファイル>
 
 出てきたのは 3 つ。
 
-- `napi_keyring.pdb`（OS の資格情報ストアにアクセスするモジュール）
-- `ghostty`（ターミナルエミュレーションのライブラリ）
+- `napi_keyring.pdb`（OS の資格情報ストアにアクセスするネイティブモジュール。名前からして napi-rs 系の [keyring-node](https://github.com/Brooooooklyn/keyring-node) 由来と見ています）
+- `ghostty`（ターミナルエミュレータ [Ghostty](https://github.com/ghostty-org/ghostty) のライブラリ部分）
 - `image_processor.pdb`（画像処理。スクリーンショットを読ませたときに使われる）
 
 そして決定打はこれです。今まさに実行中のプロセスが、Temp のこのファイルをロードしていないかを見る。
@@ -114,7 +114,7 @@ claude (PID 23440) → .{hex}-0.node
 
 ## 仕組み。Bun 製バイナリと Windows の相性問題
 
-Claude Code の Windows ネイティブ版は、Bun でコンパイルされた 238MB の単一 exe です（バイナリ内に `Bun v1.4.0` の文字列が埋まっています）。単一ファイル配布の実行形式は、内蔵しているネイティブモジュール（今回の keyring、ghostty、image_processor）をそのままではロードできないので、起動時に一時フォルダへ書き出してから読み込みます。
+Claude Code の Windows ネイティブ版は、Bun でコンパイルされた 238MB の単一 exe です（バイナリ内に `Bun v1.4.0` の文字列が埋まっています）。Bun の [single-file executable](https://bun.sh/docs/bundler/executables) は、内蔵しているネイティブモジュール（今回の keyring、ghostty、image_processor）をそのままではロードできないので、起動時に一時フォルダへ書き出してから読み込みます。
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-12_claude-temp-leak_fig2.png)
 
@@ -128,7 +128,15 @@ Claude Code の Windows ネイティブ版は、Bun でコンパイルされた 
 2.1.207  07/11 10:03 導入  → 日 30〜50 個の通常ペース
 ```
 
-特定バージョンの日だけ内部の子プロセス起動が暴れ、翌日の更新で収まった、と読んでいます。ここは中の実装を確認したわけではないので推測です。ただ、対話セッションの記録は当日 27 件しかなく、1.5 万起動の説明が付くのはセッション外の内部プロセスしかない。なお、この Temp への置き土産自体は手元だけの現象ではなく、GitHub にも同種の報告が複数上がっている既知の問題です。
+特定バージョンの日だけ内部の子プロセス起動が暴れ、翌日の更新で収まった、と読んでいます。ここは中の実装を確認したわけではないので推測です。ただ、対話セッションの記録は当日 27 件しかなく、1.5 万起動の説明が付くのはセッション外の内部プロセスしかない。
+
+なお、この Temp への置き土産自体は手元だけの現象ではなく、公式リポジトリにも同種の報告が上がっている既知の問題です。「セッションごとにネイティブの .node ファイルが Temp にリークする」という、まさにこの挙動の報告がこちら。
+
+https://github.com/anthropics/claude-code/issues/23095
+
+一時ファイルが後始末されない系の報告は他にもあります。
+
+https://github.com/anthropics/claude-code/issues/17720
 
 ## 対処。根治はできないので、安全に消す
 
