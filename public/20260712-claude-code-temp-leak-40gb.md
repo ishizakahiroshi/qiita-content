@@ -1,17 +1,19 @@
 ---
-title: "Cドライブの空きが謎に減るので Claude Code に調べさせたら、犯人は Claude Code 自身だった（%TEMP% に 37.8GB）"
+title: Cドライブの空きが謎に減るので Claude Code に調べさせたら、犯人は Claude Code 自身だった（%TEMP% に 37.8GB）
 tags:
-  - ClaudeCode
   - Windows
   - PowerShell
   - トラブルシューティング
   - Bun
+  - ClaudeCode
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-12T14:04:49+09:00'
+id: 2bc449a68951386ac48e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-12_claude-temp-leak_hero.png)
