@@ -7,7 +7,7 @@ tags:
   - Bun
   - ClaudeCode
 private: false
-updated_at: '2026-07-12T14:04:49+09:00'
+updated_at: '2026-07-12T14:11:31+09:00'
 id: 2bc449a68951386ac48e
 organization_url_name: null
 slide: false
