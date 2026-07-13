@@ -1,17 +1,19 @@
 ---
-title: "自作 OSS に HTML 対応を足そうとして、100 行書いてから設計を revert した話"
+title: 自作 OSS に HTML 対応を足そうとして、100 行書いてから設計を revert した話
 tags:
   - Python
-  - 設計
-  - OSS
   - リファクタリング
+  - 設計
   - 開発プロセス
+  - OSS
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-14T01:53:32+09:00'
+id: f0b3bfa30f11c70842a4
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![書いた 100 行を、戻した - docsweep への HTML 対応で気づいた設計転換](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260714-docsweep-html-meta-refactor/hero.png)
