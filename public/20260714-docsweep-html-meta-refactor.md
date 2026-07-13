@@ -20,7 +20,7 @@ agreed_posting_campaign_term: false
 
 自作の OSS を拡張していた日のことです。パーサに新しい機能を 100 行ほど足したところで、ふと違和感がありました。追加している場所が違うのかもしれない、と。
 
-![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260714-docsweep-html-meta-refactor/infographic.png)
+![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260714-docsweep-html-meta-refactor/infographic-v2.png)
 
 ## docsweep に HTML 資料も認識させたかった
 
