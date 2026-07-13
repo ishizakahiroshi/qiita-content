@@ -1,17 +1,19 @@
 ---
-title: "gitignore は防御じゃない。Grok Build の repo アップロード事案から、秘密の置き場所を見直す"
+title: gitignore は防御じゃない。Grok Build の repo アップロード事案から、秘密の置き場所を見直す
 tags:
-  - セキュリティ
+  - Security
   - AI
-  - LLM
   - gitignore
   - DevSecOps
+  - LLM
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-14T03:31:42+09:00'
+id: 4982fc3eedc4f17389d6
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![Grok Build 事案のヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-14_grok-build-repo-upload-timeline_hero.png)
