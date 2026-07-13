@@ -1,17 +1,19 @@
 ---
-title: "200 行ルールを疑って、自分の CLAUDE.md を『発火頻度』で仕分け直した話"
+title: 200 行ルールを疑って、自分の CLAUDE.md を『発火頻度』で仕分け直した話
 tags:
-  - Claude
+  - CLI
   - AI
   - LLM
-  - CLI
   - プロンプトエンジニアリング
+  - Claude
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-14T02:09:10+09:00'
+id: 8ffdb968963c4e992662
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![200 行ルールを疑って、CLAUDE.md を発火頻度で仕分け直した話](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260714-claude-md-firing-frequency-hero.png)
