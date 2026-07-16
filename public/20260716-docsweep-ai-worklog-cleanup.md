@@ -1,17 +1,19 @@
 ---
-title: "AIが残すplan・bugfixを自動で片付けるdocsweepの始め方"
+title: AIが残すplan・bugfixを自動で片付けるdocsweepの始め方
 tags:
   - Python
   - CLI
   - OSS
-  - 生成AI
   - 開発効率化
+  - 生成AI
 private: false
-updated_at: ''
-id: ''
+updated_at: '2026-07-16T14:04:46+09:00'
+id: 17bf7a02efcb8c4718ec
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AI作業ログを片付ける - docsweep はじめの一歩](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260716-docsweep-ai-worklog-cleanup/hero.png)
