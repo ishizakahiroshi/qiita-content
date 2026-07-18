@@ -1,17 +1,19 @@
 ---
-title: "初めて海外から Pull Request が届いた日、レビューで盛大にやらかした話"
+title: 初めて海外から Pull Request が届いた日、レビューで盛大にやらかした話
 tags:
   - OSS
-  - PullRequest
-  - i18n
+  - pullrequest
+  - I18n
   - GitHub
   - コミュニケーション
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-18T18:23:55+09:00'
+id: 47e330f498b062b7288a
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![初めての海外 PR のヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-18_first-international-pr_hero.png)
