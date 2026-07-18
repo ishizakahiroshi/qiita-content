@@ -1,5 +1,5 @@
 ---
-title: "自作 CLI が『安全策』で置いた backup ディレクトリで、非公開の md を公開リポに漏らしていた話"
+title: 自作 CLI が『安全策』で置いた backup ディレクトリで、非公開の md を公開リポに漏らしていた話
 tags:
   - Python
   - PyPI
@@ -7,11 +7,13 @@ tags:
   - OSS
   - poka-yoke
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-18T20:50:10+09:00'
+id: 0f5b3e3d6f5406f56540
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![docsweep v0.3.1 の反省と学びのヒーロー画像。backup が漏らしていた話](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-18_docsweep-backup-leak_hero.png)
