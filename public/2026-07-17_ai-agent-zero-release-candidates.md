@@ -1,18 +1,19 @@
 ---
-title: "AIエージェントで27府県を一括処理したら適用候補0件になった。段階展開へ戻した理由"
+title: AIエージェントで27府県を一括処理したら適用候補0件になった。段階展開へ戻した理由
 tags:
   - AIエージェント
   - データ移行
-  - データベース
+  - Database
   - Supabase
   - 失敗談
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-18T09:58:07+09:00'
+id: 8b5d57a9df4c678299b1
+organization_url_name: null
 slide: false
 ignorePublish: false
-published: true
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![適用候補0件 AI一括処理を分割し直した理由](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-17_ai-agent-zero-release-candidates/hero.png)
