@@ -1,5 +1,5 @@
 ---
-title: "AI が「完了しました」と言ってきたけど、CSV の行数を数えたら嘘だった話"
+title: AI が「完了しました」と言ってきたけど、CSV の行数を数えたら嘘だった話
 tags:
   - AI
   - ClaudeCode
@@ -7,11 +7,13 @@ tags:
   - 開発プロセス
   - リファクタリング
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-18T19:56:31+09:00'
+id: 42a2d9da7d175b9efe84
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AI が「完了しました」と胸を張っているが、床に未完のまま残された紙片が散らばっている構図のヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-18-ai-completion-lied-hero.png)
