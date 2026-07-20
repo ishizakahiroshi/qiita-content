@@ -7,11 +7,13 @@ tags:
   - 個人開発
   - ワークフロー
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-07-21T02:27:22+09:00'
+id: f2f9a069b1ff641ee43d
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![音声入力で複数リポを回す模式イラスト](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-21_voice-alias-parallel-repos/hero.png)
