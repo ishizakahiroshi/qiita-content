@@ -456,7 +456,7 @@ Cons: 全 skill に配線が必要・記述の重複
 
 - MCP エコシステム全体で「browser 系サーバー」が最も star を集めるジャンルになっている可能性
 - OpenAI と Anthropic の間で MCP プロトコルの拡張仕様（認証、権限、コスト計測）で議論が起きる可能性
-- Google Gemini CLI 側が独自の Web 統合を打ち出してくる可能性はあり
+- Google Antigravity CLI（旧 Gemini CLI 系。2025 年後半に Antigravity プラットフォームへ再編成。https://antigravity.google/ ）が独自の Web 統合を強化してくる可能性はあり
 - 個人開発者にとっては「Claude で無料、Codex で API 課金」の構造が体感として広く知られるように
 
 ### 1 年後（2027 年 7 月頃）
