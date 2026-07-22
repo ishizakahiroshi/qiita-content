@@ -20,7 +20,7 @@ agreed_posting_campaign_term: false
 
 ![Codex は API、Claude は Web の対比ヒーロー](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-23_codex-vs-claude-mcp-browser-delegate/hero.png)
 
-前作の note で「`gh run watch` の tail を信じたら Validate が赤いままタグを push していた話」を書きました。https://note.com/ishizakahiroshi （公開後に URL 差し替え予定）。それを書いている最中に、ちょっと別方向から強い風が吹きました。
+ちょうど v0.5.1 リリースの振り返り note 記事（`gh run watch` の tail を信じたら Validate が赤いままタグを push していた話）を書いている最中でした。振り返りを書いていたはずが、その途中でちょっと別方向から強い風が吹きました。
 
 自作のスキルを Codex CLI で動かしたときの挙動と、Claude Code で動かしたときの挙動を、目の前で並べて比べてしまったのです。
 
@@ -528,7 +528,7 @@ Star をいただけると開発の励みになります。使ってみて「こ
 
 ## おわりに
 
-前作の note 記事も、良ければどうぞ。https://note.com/ishizakahiroshi （公開後に URL 差し替え予定）。「gh run watch の tail 表示を信じたら Validate が赤いままタグを push していた話」でした。この記事はその続き、というか脱線から生まれた副産物です。
+この記事は、v0.5.1 リリース振り返り note 記事を書いている最中に生まれた脱線から広げたものです。振り返りの note のほうは近日中に別途公開します。
 
 3 万字書いてみて分かったのは、**この題材はまだ書ききれていない**ということでした。実装が進めば「実際に browser-delegate を書いてみたら詰まった話」も書けそう。次に書きたいネタが目の前に転がっている、というのは幸せな状態です。
 
