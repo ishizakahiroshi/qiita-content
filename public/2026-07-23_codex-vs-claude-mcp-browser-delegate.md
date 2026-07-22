@@ -3,13 +3,13 @@ title: >-
   Codex は API を叩き、Claude は Web でタダだった。多 AI CLI 時代の skill
   経路分岐と、次に狙う「browser-delegate」の話
 tags:
-  - MCP
   - AIエージェント
   - Claude
-  - codex
+  - MCP
   - OSS
+  - codex
 private: false
-updated_at: '2026-07-23T01:49:24+09:00'
+updated_at: '2026-07-23T01:51:25+09:00'
 id: a72e4637bdd7499421be
 organization_url_name: null
 slide: false
