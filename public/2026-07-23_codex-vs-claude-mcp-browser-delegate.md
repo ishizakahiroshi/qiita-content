@@ -467,7 +467,7 @@ Cons: 全 skill に配線が必要・記述の重複
 
 **予測 3 つはハズしていい**という前提で書いています。とはいえ MCP が中立プロトコルであることと、Anthropic の Chrome 拡張が既に一般公開されていることを踏まえると、「Claude だけタダ」の非対称は今後 1 年は続くと考えています。
 
-![予測タイムライン: 3 ヶ月・6 ヶ月・1 年後](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-23_codex-vs-claude-mcp-browser-delegate/fig-4.png)
+![予測タイムライン: 3 ヶ月・6 ヶ月・1 年後](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-23_codex-vs-claude-mcp-browser-delegate/fig-4-v2.png)
 
 このタイムラインはあくまで私見で、外れる可能性が高い箇所も多々あります。特に OpenAI が Chrome 拡張を出す/出さないの判断は完全に主観です。それでも「1 年は非対称が続く」だけは高い確度で言えると思っています。
 
