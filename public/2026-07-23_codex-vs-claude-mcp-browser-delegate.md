@@ -9,7 +9,7 @@ tags:
   - OSS
   - codex
 private: false
-updated_at: '2026-07-23T01:51:25+09:00'
+updated_at: '2026-07-23T01:57:26+09:00'
 id: a72e4637bdd7499421be
 organization_url_name: null
 slide: false
