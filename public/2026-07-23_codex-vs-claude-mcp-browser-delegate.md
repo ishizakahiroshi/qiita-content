@@ -28,6 +28,12 @@ agreed_posting_campaign_term: false
 
 見た目には同じ結果。裏では月に数百円から数千円の差が積み上がる構造。
 
+## 忙しい人向け（AI 音声解説・18 分）
+
+この記事の音声版を NotebookLM で作りました。移動中・作業中の "ながら聴き" にどうぞ。
+
+https://youtu.be/zdyBH7-WOYY
+
 ## TL;DR
 
 - 自作の記事作成スキルを Codex CLI と Claude Code で並べて動かしたら、**Codex は Gemini 画像 API を有料で叩き、Claude は Chrome を自動操作して Web の無料枠でタダで生成**していた
