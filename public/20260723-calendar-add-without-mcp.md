@@ -1,5 +1,5 @@
 ---
-title: "AIエージェントにGoogleカレンダー登録をやらせるとき、MCPを繋ぐ前に考えたこと"
+title: AIエージェントにGoogleカレンダー登録をやらせるとき、MCPを繋ぐ前に考えたこと
 tags:
   - AI
   - GoogleCalendar
@@ -7,11 +7,13 @@ tags:
   - 生産性
   - ClaudeCode
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-23T23:40:18+09:00'
+id: 7c7cbe0182163d08b495
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AIエージェントにGoogleカレンダー登録をやらせるとき、MCPを繋ぐ前に考えたこと](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-23_calendar-add_hero.png)
