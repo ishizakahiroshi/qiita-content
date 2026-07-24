@@ -1,17 +1,19 @@
 ---
-title: "Claude Code の体感バグを数字にする: 3 モデル resume 比較の手順"
+title: 'Claude Code の体感バグを数字にする: 3 モデル resume 比較の手順'
 tags:
   - Claude
   - ClaudeCode
   - LLM
   - AI
-  - デバッグ
+  - debug
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-24T22:12:05+09:00'
+id: 990dd55e53690ca0a4bd
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-24_claude-code-empirical-bug-measurement_hero.png)
