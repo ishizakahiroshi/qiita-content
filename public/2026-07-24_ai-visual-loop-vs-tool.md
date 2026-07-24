@@ -1,17 +1,21 @@
 ---
-title: "AI に画像を投げて『ここズレてない?』を毎回聞くのに疲れたので、PowerShell + Chrome headless で機械的に検査させた話（Opus 4.8 の実価格で節約額も出す）"
+title: >-
+  AI に画像を投げて『ここズレてない?』を毎回聞くのに疲れたので、PowerShell + Chrome headless で機械的に検査させた話（Opus
+  4.8 の実価格で節約額も出す）
 tags:
   - PowerShell
   - Chrome
   - AI
-  - セキュリティ
+  - Security
   - 自動化
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-24T22:53:12+09:00'
+id: 30f8e9854150a775183d
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AI に画像を投げる代わりに、機械に叩かせて 92 円 / 記事を節約する話のヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-24_ai-visual-loop-vs-tool_hero.png)
