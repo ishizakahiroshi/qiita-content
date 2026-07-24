@@ -7,11 +7,13 @@ tags:
   - LLM
   - プロンプトエンジニアリング
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-07-25T01:12:20+09:00'
+id: acc4eb68e36ec3402a49
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](images/2026-07-24_ai-harness-runaway/2026-07-24_AIハーネス暴走の解剖_hero.png)
