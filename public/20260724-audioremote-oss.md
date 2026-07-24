@@ -1,5 +1,5 @@
 ---
-title: "Windowsの既定オーディオ出力をブラウザから切り替えるOSSを作る前に、名前と配布とSmartScreenを調べ尽くした話"
+title: Windowsの既定オーディオ出力をブラウザから切り替えるOSSを作る前に、名前と配布とSmartScreenを調べ尽くした話
 tags:
   - Windows
   - Rust
@@ -7,11 +7,13 @@ tags:
   - OSS
   - 配布
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-07-24T13:16:32+09:00'
+id: be424fcb61b18e33ee7f
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-24_audioremote_hero.png)
