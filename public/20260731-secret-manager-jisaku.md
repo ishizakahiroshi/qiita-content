@@ -1,17 +1,21 @@
 ---
-title: "secret manager を自作するために、1Password と age と SOPS と OS 標準の秘密保管を白書ベースで読み解いた（そして車輪の再発明を宣言する）"
+title: >-
+  secret manager を自作するために、1Password と age と SOPS と OS
+  標準の秘密保管を白書ベースで読み解いた（そして車輪の再発明を宣言する）
 tags:
   - 1Password
-  - セキュリティ
+  - Security
   - 暗号
   - CLI
   - Go
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-07-31T22:19:55+09:00'
+id: b999eff900b43a7a8b52
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-24_secret-manager-jisaku/2026-07-24_secret-manager-jisaku_hero.png)
