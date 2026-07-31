@@ -9,7 +9,7 @@ tags:
   - CLI
   - Go
 private: false
-updated_at: '2026-07-31T22:19:55+09:00'
+updated_at: '2026-07-31T22:29:43+09:00'
 id: b999eff900b43a7a8b52
 organization_url_name: null
 slide: false
