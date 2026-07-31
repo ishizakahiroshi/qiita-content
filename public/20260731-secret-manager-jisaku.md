@@ -275,6 +275,11 @@ Windows Credential Manager だけでも足りる場面もあります。無料�
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-07-31_secret-manager-from-scratch/
+
+---
+
 ※ ヘッダー画像とインフォグラフィックは AI（画像生成）で作成しています。
 
 書いた人: ishizakahiroshi
