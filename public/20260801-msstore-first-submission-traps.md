@@ -1,17 +1,19 @@
 ---
-title: "Tauri アプリの Microsoft Store 初回申請で踏んだ4つの罠と回避手順（MSIX / Partner Center）"
+title: Tauri アプリの Microsoft Store 初回申請で踏んだ4つの罠と回避手順（MSIX / Partner Center）
 tags:
   - MicrosoftStore
-  - MSIX
+  - msix
   - Tauri
   - Windows
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-01T09:08:46+09:00'
+id: 57e9b7933fe375fbb1e8
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![Tauri アプリの Microsoft Store 初回申請で踏んだ4つの罠](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-07-31_msstore-traps_hero.png)
