@@ -1,17 +1,19 @@
 ---
-title: "AI がコードに埋めた自分の本名をコミット前に止める doxguard を公開しました"
+title: AI がコードに埋めた自分の本名をコミット前に止める doxguard を公開しました
 tags:
   - Rust
   - Git
-  - セキュリティ
+  - Security
   - 個人情報
   - OSS
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-03T23:34:43+09:00'
+id: 50d1543974de5e7b6864
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![doxguard ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-03_doxguard_hero.png)
