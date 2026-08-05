@@ -1,17 +1,19 @@
 ---
-title: "PostgreSQL の migration が「全部成功」したのに本番が壊れる。plpgsql の遅延解決と、カタログを見る検証の限界"
+title: PostgreSQL の migration が「全部成功」したのに本番が壊れる。plpgsql の遅延解決と、カタログを見る検証の限界
 tags:
   - PostgreSQL
   - Supabase
-  - plpgsql
+  - PLpgSQL
   - migration
   - CI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-05T16:36:58+09:00'
+id: 257b0fc493007e64db4b
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260805-plpgsql-migration-dependency-hero.png)
