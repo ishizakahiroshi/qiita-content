@@ -150,6 +150,16 @@ winget にだけ締切があります。初回 PR（https://github.com/microsoft
 
 やっていることは単純です。ホスト側で Rust 製の小さな HTTP サーバーが常駐して、同じ LAN に Web ページを配ります。手元のどの端末のブラウザからでもそれを開けば、ホストの再生デバイス一覧が出てきます。押せば、その場で Windows の既定になります。
 
+![ゲスト側で開く Web UI](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-05_msstore-name-conflict_screenshot-guest.png)
+
+ゲスト側で見えるのはこれだけです。上がマスター音量、下がホストに繋がっている再生デバイスの一覧で、緑の丸が今の既定。行をタップすると Console / Multimedia / Communications がまとめて切り替わります。右上の「LAN 露出中」は、ホスト以外からも繋がる設定になっていることの注意表示です。
+
+ホスト側は窓を持ちません。通知領域のアイコンが入口で、右クリックするとこうなります。
+
+![ホスト側のトレイメニュー](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-05_msstore-name-conflict_screenshot-host.png)
+
+「共有 URL（接続用トークンを含む）をコピー」がゲストへの受け渡し口です。トークンを含むことをメニューの文言に書いてあるのは、これが実質パスワードだからで、起動時に黙ってクリップボードへ入れる作りにはしていません。
+
 設計で外さなかったのは 4 点です。
 
 - **Console / Multimedia / Communications の 3 役割を毎回まとめて切り替える。** 前 2 つだけ変えると、会議アプリだけが昨日のヘッドセットにつながったままになります。`IPolicyConfig` は 1 役割ずつしか設定できないので、切り替えた後に 3 つを再列挙して照合し、割れていたら 409 を返します
