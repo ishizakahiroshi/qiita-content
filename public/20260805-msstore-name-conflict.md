@@ -1,17 +1,19 @@
 ---
-title: "Microsoft Store でアプリ名が4パターン全滅したので、npm と crates.io の名前も全部取り直します"
+title: Microsoft Store でアプリ名が4パターン全滅したので、npm と crates.io の名前も全部取り直します
 tags:
   - Windows
   - Rust
   - MicrosoftStore
-  - MSIX
+  - msix
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-05T13:38:03+09:00'
+id: 6659a2afe2fdaad911ba
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![Remote Audio ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-05_msstore-name-conflict_hero.png)
