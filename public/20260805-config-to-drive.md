@@ -1,5 +1,5 @@
 ---
-title: "Claude Code の設定を GitHub に置けないので、Windows のリンクで実体だけ Google ドライブへ逃がした"
+title: Claude Code の設定を GitHub に置けないので、Windows のリンクで実体だけ Google ドライブへ逃がした
 tags:
   - Windows
   - ClaudeCode
@@ -7,11 +7,13 @@ tags:
   - シンボリックリンク
   - バックアップ
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-05T18:08:59+09:00'
+id: 5dd3504c7c180c052b56
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![設定はリンクで逃がす](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-05_config-to-drive_hero.png)
