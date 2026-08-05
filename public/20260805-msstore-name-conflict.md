@@ -118,7 +118,7 @@ v0.1.0 を出したのは 2026 年 7 月 31 日で、この記事の 5 日前で
 
 なので、寄せます。**v0.2 で npm と crates.io の名前も取り直して、全部 RemoteAudio に統一します。**
 
-![統一できるかどうかを分けるのは技術ではなくユーザー数](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-05_msstore-name-conflict_fig2.png)
+![統一できるかどうかを分けるのは技術ではなくユーザー数](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-05_msstore-name-conflict_fig2-v2.png)
 
 図にしてみると、分岐しているのは技術的な難しさではありません。まったく同じ操作が、既に使っている人がいるかどうかで「やってはいけないこと」と「今しかできないこと」に反転します。
 
@@ -130,7 +130,28 @@ v0.1.0 を出したのは 2026 年 7 月 31 日で、この記事の 5 日前で
 - winget: `PackageIdentifier` も `ishizakahiroshi.RemoteAudio` へ
 - 旧 `audioremote` は最終版を 1 つだけ出して「新しい名前へ移ってください」と案内し、以後は更新しない
 
-winget にだけ締切があります。初回 PR（https://github.com/microsoft/winget-pkgs/pull/411865 ）はまだ open のままなので、今なら `PackageIdentifier` ごと差し替えられます。マージされた瞬間にこれは永久識別子になるので、揃えるならその前が最後の機会です。
+winget にだけ締切がある、と書くつもりでした。初回 PR（https://github.com/microsoft/winget-pkgs/pull/411865 ）が open のうちなら `PackageIdentifier` ごと差し替えられて、マージされた瞬間に永久識別子になるからです。
+
+**ところが公開したあとに PR を見に行ったら、マージ待ちではありませんでした。** バリデーションに失敗して止まっていました。
+
+```
+labels: Internal-Error-PR, Needs-Attention, Validation-Guide
+```
+
+原因はマニフェストの置き場所でした。バージョンフォルダがありません。
+
+```
+出したパス
+  manifests/i/ishizakahiroshi/AudioRemote/ishizakahiroshi.AudioRemote.installer.yaml
+
+正しい構造（同じアカウントの別パッケージは 8 バージョンすべてこの形）
+  manifests/i/ishizakahiroshi/many-ai-cli/0.3.0/ishizakahiroshi.many-ai-cli.installer.yaml
+                                          ~~~~~
+```
+
+マニフェスト本体の `PackageVersion` は `0.1.0` で正しく入っていたので、中身ではなく**配置だけ**の問題です。どのみち作り直しなので、この PR は閉じて v0.2.0 のリリース時に新しい識別子で出し直すことにしました。
+
+**締切だと思っていたものは、最初から存在しませんでした。** 期限に追われて識別子を決めかけていたわけで、そこは調べ直してよかったです。
 
 ## それでも、完全には揃いません
 
