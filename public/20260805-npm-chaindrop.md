@@ -6,7 +6,7 @@ tags:
   - Security
   - GitHubActions
   - サプライチェーン攻撃
-private: false
+private: true
 updated_at: ''
 id: ''
 organization_url_name: null
