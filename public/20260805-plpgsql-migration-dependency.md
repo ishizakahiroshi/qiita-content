@@ -209,6 +209,11 @@ and pg_get_function_identity_arguments(p.oid) in ('text', 'uuid');
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-08-05_plpgsql-migration-dependency/
+
+---
+
 ※ ヘッダー画像とインフォグラフィックは AI（画像生成）で作成しています。
 
 書いた人: ishizakahiroshi
