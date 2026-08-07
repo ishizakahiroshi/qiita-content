@@ -1,17 +1,19 @@
 ---
-title: "Nextcloud で複数ファイルをまとめてダウンロードできない。サーバーログには何も残っていなかった"
+title: Nextcloud で複数ファイルをまとめてダウンロードできない。サーバーログには何も残っていなかった
 tags:
-  - Nextcloud
+  - nextcloud
   - nginx
-  - HTTP2
+  - http2
   - トラブルシューティング
-  - WebDAV
+  - webdav
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-07T15:58:12+09:00'
+id: 750fe5d35853ea5150c3
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![Nextcloud で複数ファイルをまとめてダウンロードできない](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-07_nc-multiselect-download_hero.png)
