@@ -1,17 +1,19 @@
 ---
-title: "SEO 用のプリレンダー HTML が初期表示を壊していた。createRoot から hydrateRoot へ移すまで"
+title: SEO 用のプリレンダー HTML が初期表示を壊していた。createRoot から hydrateRoot へ移すまで
 tags:
   - React
-  - SSR
+  - ssr
   - hydration
-  - Vite
+  - vite
   - SEO
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-07T13:30:04+09:00'
+id: 0bfa08174025670c0b00
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![SEO 用のプリレンダー HTML が初期表示を壊していた](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-07_prerender-hydration_hero.png)
