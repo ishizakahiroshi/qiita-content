@@ -1,5 +1,5 @@
 ---
-title: "npmとは何か。ChainDropサプライチェーン攻撃を依存関係・preinstall・provenanceから理解する"
+title: npmとは何か。ChainDropサプライチェーン攻撃を依存関係・preinstall・provenanceから理解する
 tags:
   - npm
   - JavaScript
@@ -7,11 +7,13 @@ tags:
   - GitHubActions
   - サプライチェーン攻撃
 private: true
-updated_at: ''
-id: ''
+updated_at: '2026-08-07T10:48:05+09:00'
+id: b98de3395d11de91af2e
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 # npmとは何か。ChainDropサプライチェーン攻撃を依存関係・preinstall・provenanceから理解する
