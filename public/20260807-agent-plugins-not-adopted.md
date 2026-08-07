@@ -1,5 +1,5 @@
 ---
-title: "Agent Plugins を自作ツールに取り込むか検討して、見送りました。配布モデルが逆向きだった"
+title: Agent Plugins を自作ツールに取り込むか検討して、見送りました。配布モデルが逆向きだった
 tags:
   - AI
   - OpenAI
@@ -7,11 +7,13 @@ tags:
   - MCP
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-07T16:21:41+09:00'
+id: 000383ea267490d25886
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![標準に乗らない Agent Plugins を見送った理由](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-07_agent-plugins-not-adopted_hero.png)
