@@ -1,17 +1,19 @@
 ---
-title: "Cloudflareの「10,000PV突破おめでとう」が9割bot だったので、開き直って公開APIを作った話"
+title: 'Cloudflareの「10,000PV突破おめでとう」が9割bot だったので、開き直って公開APIを作った話'
 tags:
-  - Cloudflare
+  - cloudflare
   - bot
-  - OpenData
+  - opendata
   - 個人開発
   - データ品質
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-07T10:48:06+09:00'
+id: f779e632b06a7c54a903
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20260807-bot-traffic-to-open-data-api-hero.png)
