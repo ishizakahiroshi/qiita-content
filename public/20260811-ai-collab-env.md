@@ -1,5 +1,5 @@
 ---
-title: "レガシーシステム刷新を複数人・複数AIで進める共同編集環境の作り方"
+title: レガシーシステム刷新を複数人・複数AIで進める共同編集環境の作り方
 tags:
   - AIエージェント
   - Git
@@ -7,11 +7,13 @@ tags:
   - 開発プロセス
   - レガシーシステム
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-11T03:51:02+09:00'
+id: efdfbf830f47181444b9
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![タイトル画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-11_ai-collab-env_hero.png)
