@@ -1,17 +1,19 @@
 ---
-title: "手元の pytest が緑でもリリースしてはいけない。タグを打つまでに踏んだ4つの穴（CI / CSP / 依存上限 / wheel）"
+title: 手元の pytest が緑でもリリースしてはいけない。タグを打つまでに踏んだ4つの穴（CI / CSP / 依存上限 / wheel）
 tags:
   - Python
   - CI
   - CSP
   - リリース
-  - packaging
+  - Packaging
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-11T02:22:50+09:00'
+id: 9653a0a9273abd99a699
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![タイトル画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-11_release-pitfalls_hero.png)
