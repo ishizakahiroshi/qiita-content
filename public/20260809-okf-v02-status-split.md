@@ -231,6 +231,11 @@ OKF v0.2 対応で一番大きかったのは、コマンドが増えたこと�
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-08-09_okf-v02-status-split/
+
+---
+
 書いた人: ishizakahiroshi
 群馬の北部で、保護猫2匹と暮らす、在宅エンジニア（何でも屋）
 https://ishizakahiroshi.com/
