@@ -1,5 +1,5 @@
 ---
-title: "対応 AI CLI を増やす前に、自分のツールの利用者数を測った方がいい"
+title: 対応 AI CLI を増やす前に、自分のツールの利用者数を測った方がいい
 tags:
   - AI
   - 個人開発
@@ -7,11 +7,13 @@ tags:
   - OSS
   - 意思決定
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-13T09:15:51+09:00'
+id: f491815a42b157f15932
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-13_cli-survey_hero.png)
