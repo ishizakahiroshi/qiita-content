@@ -31,13 +31,14 @@ agreed_posting_campaign_term: false
 - 何ができるかの紹介ページ: https://ishizakahiroshi.com/work.html?id=many-ai-cli
 - リポジトリ（Star をいただけると励みになります）: https://github.com/ishizakahiroshi/many-ai-cli
 
-同じ悩みを持っている方は、下記で入ります。
+同じ悩みを持っている方は、下記の 2 行で入ります。
 
 ```powershell
 pnpm add -g many-ai-cli
+many-ai-cli setup
 ```
 
-`bun install -g many-ai-cli` でも `npm install -g many-ai-cli` でも入ります。Windows は winget、macOS は Homebrew の cask もあります。
+`bun install -g many-ai-cli` でも `npm install -g many-ai-cli` でも入ります。Windows は winget、macOS は Homebrew の cask もあります。**どの入れ方でも `setup` は 1 回だけ手で叩く必要があります**（npm パッケージに postinstall は置いていません）。この記事に出てくるデスクトップのショートカットは、インストール時ではなく `setup` が作ります。
 
 この話には前があります。前回は、対応する AI CLI を増やすかどうかを 20 製品調べて全部見送った、という判断の記録でした。
 
@@ -385,7 +386,7 @@ opencode を wrap するとき、Hub はセッションの作業ディレクト�
 - 離席中もスマホから承認だけ返しておきたい人
 - v0.7.0 からは、Windows でトレイアイコン 1 個から Hub の起動と停止ができます
 
-いずれかに心当たりがあれば、`pnpm add -g many-ai-cli` で 1 分で試せます。設定ゼロで動きます。
+いずれかに心当たりがあれば、`pnpm add -g many-ai-cli` と `many-ai-cli setup` の 2 行で 1 分で試せます。設定ファイルを書く必要はありません。
 
 - 紹介ページ（スクショと機能一覧）: https://ishizakahiroshi.com/work.html?id=many-ai-cli
 - リポジトリ（Issue / PR 歓迎）: https://github.com/ishizakahiroshi/many-ai-cli
