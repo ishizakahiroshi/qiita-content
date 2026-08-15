@@ -1,5 +1,5 @@
 ---
-title: "承認パネルが握り潰される原因を138件のダンプから特定した。many-ai-cli v0.7.0 の6つの変更"
+title: 承認パネルが握り潰される原因を138件のダンプから特定した。many-ai-cli v0.7.0 の6つの変更
 tags:
   - Go
   - TypeScript
@@ -7,11 +7,13 @@ tags:
   - 個人開発
   - CLI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-16T01:16:06+09:00'
+id: fc31553bf9427109d4dc
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-16_v070_hero.png)
