@@ -278,6 +278,11 @@ Star をいただけると開発の励みになります。使ってみて「こ
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-08-17_msstore-ci-blocked/
+
+---
+
 ※ ヘッダー画像とインフォグラフィックは AI（画像生成）で作成しています。
 
 書いた人: ishizakahiroshi
