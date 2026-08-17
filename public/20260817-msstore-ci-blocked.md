@@ -1,17 +1,19 @@
 ---
-title: "Microsoft Store の更新を CI 化しようとしたら、公式手順の画面が存在しなかった"
+title: Microsoft Store の更新を CI 化しようとしたら、公式手順の画面が存在しなかった
 tags:
   - MicrosoftStore
-  - MSIX
+  - msix
   - PartnerCenter
   - Tauri
   - CI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-17T15:27:18+09:00'
+id: 2598b42565bd2fa4ccac
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-17_msstore-ci_hero.png)
