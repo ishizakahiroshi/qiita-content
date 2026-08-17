@@ -7,7 +7,7 @@ tags:
   - Tauri
   - CI
 private: false
-updated_at: '2026-08-17T15:27:18+09:00'
+updated_at: '2026-08-17T18:34:33+09:00'
 id: 2598b42565bd2fa4ccac
 organization_url_name: null
 slide: false
