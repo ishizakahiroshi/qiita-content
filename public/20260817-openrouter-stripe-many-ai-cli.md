@@ -48,6 +48,24 @@ https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-f
 npm i -g many-ai-cli
 ```
 
+入れたら 1 回だけ `many-ai-cli setup` を実行します。これでデスクトップにショートカットができて、次回以降はダブルクリックで起動します。`many-ai-cli` が見つからないと言われたら、シェルを開き直してください。
+
+起動後の見え方は OS で違います。
+
+Windows はショートカットが「Many AI Hub」の 1 個で、タスクトレイに常駐します。アイコンをクリックして「Hub を開く」を選ぶとブラウザが開きます（`http://127.0.0.1:47777`）。止めるのは同じトレイの「Hub を停止」です。
+
+macOS と Linux は「Many AI Hub Start」と「Many AI Hub Stop」の 2 個です。Start で黒いコンソール窓とブラウザが一緒に開きますが、この窓が Hub の本体なので、閉じずに最小化してください。Linux の GNOME では初回だけ、ショートカットを右クリックして「起動を許可」を選ぶ必要があります。
+
+ショートカットを使わず、ターミナルから直接立てても構いません。これは 3 OS 共通です。
+
+```bash
+many-ai-cli serve --open
+```
+
+ブラウザが開いたら、左下の「+ 新しいセッション」から claude / codex / copilot / cursor-agent / opencode / grok のどれかを選んで起動します。
+
+正直に書いておくと、実機で動作を確認できているのは Windows です。ネイティブの macOS と Linux は動く想定で作っていますが、手元に環境がなく十分な検証ができていません。踏んだら Issue で教えてもらえると助かります。
+
 この話には前があります。前回は AI コーディング CLI を 20 製品調べて、1 つも実装しないことにしました。候補の利用者数を並べる前に、自分のツールの分母を見ていなかったからです。
 
 前回の記事: [対応 AI CLI を増やす前に、自分のツールの利用者数を測った方がいい](https://qiita.com/ishizakahiroshi/items/f491815a42b157f15932)
@@ -218,7 +236,7 @@ OpenRouter が AI API の Stripe なら、many-ai-cli は手元にある利用�
 - 離席中でも、スマホから承認だけしたい人
 - サブスクを先に使い、API は逃げ先にしたいと考えている人
 
-いずれかに心当たりがあれば、`npm i -g many-ai-cli` で 1 分で試せます。設定ゼロで動きます。
+いずれかに心当たりがあれば、`npm i -g many-ai-cli` と `many-ai-cli setup` の 2 コマンドで試せます。設定ファイルを書く必要はありません。
 
 - 紹介ページ（スクショと機能一覧）: https://ishizakahiroshi.com/work.html?id=many-ai-cli
 - リポジトリ（Issue / PR 歓迎）: https://github.com/ishizakahiroshi/many-ai-cli
