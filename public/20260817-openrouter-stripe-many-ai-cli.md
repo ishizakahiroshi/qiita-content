@@ -33,6 +33,8 @@ https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-f
 
 結論から書きます。載せる価値はある。ただし独立した 7 つ目のプロバイダとしては載せない。既存 CLI の接続先として差す。しかも第一選択にはしない。
 
+![記事の要約（インフォグラフィック）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-17_openrouter-many-ai-cli_infographic.png)
+
 ## 自作ツールを持っている方へ
 
 自作で [many-ai-cli](https://github.com/ishizakahiroshi/many-ai-cli) という Web ダッシュボードを作っています。複数の AI コーディング CLI を並列で走らせ、承認をブラウザ 1 タブに集約。スマホからでも。
@@ -108,7 +110,7 @@ https://www.anthropic.com/news/series-h
 
 https://www.reuters.com/business/anthropic-raises-65-billion-now-valued-965-billion-2026-05-28/
 
-Reuters Breakingviews は、この run-rate の定義にも触れています。従量の顧客は直近 28 日を 13 倍し、サブスクは月額を 12 倍して足す。大企業が売上の 8 割で、その多くが消費量ベースだ、と。瞬間風速なので、四半期の確定売上と同じ数字ではありません。それでも「一般ユーザーの月額」より「企業の従量」が大きい、という向きは公式の数字と矛盾しません。
+Reuters Breakingviews は、この run-rate の定義にも触れています。従量の顧客は直近 28 日を 13 倍し、サブスクは月額を 12 倍して足す。大企業が Anthropic の売上の 8 割で、その多くが消費量ベースだ、と。この 8 割は Anthropic 1 社の売上構成の話で、LLM 各社に共通する比率ではありません。瞬間風速なので、四半期の確定売上と同じ数字ではありません。それでも「一般ユーザーの月額」より「企業の従量」が大きい、という向きは公式の数字と矛盾しません。
 
 https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/
 
