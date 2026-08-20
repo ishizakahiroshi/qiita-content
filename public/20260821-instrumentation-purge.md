@@ -7,7 +7,7 @@ tags:
   - staticcheck
   - OSS
 private: false
-updated_at: '2026-08-21T08:41:15+09:00'
+updated_at: '2026-08-21T08:46:52+09:00'
 id: 7871f232ac63e2d19a37
 organization_url_name: null
 slide: false
