@@ -1,5 +1,5 @@
 ---
-title: "調査用のデバッグコードをリリースに混ぜない設計（台帳 + build tag + 成果物検査）"
+title: 調査用のデバッグコードをリリースに混ぜない設計（台帳 + build tag + 成果物検査）
 tags:
   - Go
   - TypeScript
@@ -7,11 +7,13 @@ tags:
   - staticcheck
   - OSS
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-21T08:41:15+09:00'
+id: 7871f232ac63e2d19a37
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-21_instrumentation-purge_hero.png)
