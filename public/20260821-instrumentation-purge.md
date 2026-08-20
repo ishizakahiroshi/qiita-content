@@ -150,7 +150,7 @@ bufProbe?.emit(() => ({
 もっともらしいのですが、確かめずに書いていました。実際に動いているプロセスを見たら、こうでした。
 
 ```
-Path : D:\dev\github\public\many-ai-cli\dist\many-ai-cli.exe
+Path : <ローカルのリポジトリ>\dist\many-ai-cli.exe
 ```
 
 npm 経由で入れたリリース版ではなく、自分の `make build` の成果物でした。作者が日常で使っているのは最初から開発ビルドです。だとすると、開発ビルドを日常使いにするコストはゼロです。
