@@ -1,17 +1,19 @@
 ---
-title: "監査プロンプトをAIツール別に持つのをやめた。10本を対象別3本へ統合した設計"
+title: 監査プロンプトをAIツール別に持つのをやめた。10本を対象別3本へ統合した設計
 tags:
   - AI
   - ClaudeCode
   - プロンプト
   - コードレビュー
-  - セキュリティ
+  - Security
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-23T23:40:47+09:00'
+id: a7065348ad7ca46ca521
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-23_audit-prompts-tool-to-target_hero.png)
