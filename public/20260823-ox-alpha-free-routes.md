@@ -22,6 +22,10 @@ agreed_posting_campaign_term: false
 
 バグを 1 個仕込んだ Python を渡して「テストが通るように直して」と頼んだら、ファイルを 2 つ読んで、1 文字だけ書き換えて、自分でテストを走らせて、7/7 で戻ってきた。使ったモデルの名前は Ox Alpha です。誰が作ったのかは分かりません。値段は 0 円です。
 
+続きを書きました。正体の確認と、無料期間に手元で使ったトークン量です。
+
+続編: [Ox Alpha の正体は Z.AI の GLM だった。無料期間に手元で使ったトークン量](https://qiita.com/ishizakahiroshi/items/36b652d03016c3f59739)
+
 ![記事の要約（インフォグラフィック）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-23_ox-alpha_infographic.png)
 
 ## 先に結論。今どこで無料で触れるのか
@@ -205,6 +209,7 @@ OpenCode が言っている「1 日 100 兆トークン」を額面どおり受�
 
 ## あわせて読みたい
 
+- [Ox Alpha の正体は Z.AI の GLM だった。無料期間に手元で使ったトークン量](https://qiita.com/ishizakahiroshi/items/36b652d03016c3f59739)（続編。Bloomberg への回答で正体が確定したあと、手元の利用ログを足した）
 - [OpenRouter を many-ai-cli に載せるなら、独立プロバイダにはしない](https://qiita.com/ishizakahiroshi/items/4feda29aa885644c982b)
   今回の入口になった OpenRouter を、自作ツール側からどう扱うか考えた記事です。ステルスモデルのように出入りするモデルを抱える中継所を、固定のプロバイダとして実装しない理由もここに書いています。
 - [Claude Code / Codex / Cursor / Copilot / OpenCode で同じ Agent Skills を共有する](https://qiita.com/ishizakahiroshi/items/6821655d5af59a32e50c)
