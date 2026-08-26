@@ -1,5 +1,5 @@
 ---
-title: "Ox Alpha の正体は Z.AI の GLM だった。無料期間に手元で使ったトークン量"
+title: Ox Alpha の正体は Z.AI の GLM だった。無料期間に手元で使ったトークン量
 tags:
   - OxAlpha
   - GLM
@@ -7,11 +7,13 @@ tags:
   - LLM
   - 生成AI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-26T21:07:20+09:00'
+id: 36b652d03016c3f59739
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-26_ox-alpha-glm_hero.png)
