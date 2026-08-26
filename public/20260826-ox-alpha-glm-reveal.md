@@ -171,6 +171,9 @@ Go と Zen の両方に `Ox Alpha Free (Unlimited)` とある。Zen 側には Fr
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-08-26_ox-alpha-glm-reveal/
+
 ※ ヘッダー画像と本文の挿絵は AI（画像生成）で作成しています。
 
 書いた人: ishizakahiroshi
