@@ -243,18 +243,21 @@ agy --print "あなたが今使える skill の総数を教えて"
 
 ## 手順の詳細版
 
-配線の手順そのもの（Windows のジャンクションと macOS / Linux の symlink、確認方法、元に戻す手順、停止条件）は、個人サイトに手順書としてまとめました。AI エージェントにそのまま渡して実行させる形で書いてあります。
+配線の手順そのもの（Windows のジャンクションと macOS / Linux の symlink、確認方法、元に戻す手順、停止条件）は、GitHub の 1 ファイルにまとめてあります。AI エージェントにそのまま渡して実行させる形で書いてあります。
 
-- [複数の AI CLI で skills 棚とルールの正本を 1 本にまとめる手順](https://ishizakahiroshi.com/articles/2026/2026-08-30_multi-ai-cli-shared-skills-and-rules/)
+- [docs/manual_shared-skills-and-rules.md](https://github.com/ishizakahiroshi/many-ai-cli/blob/main/docs/manual_shared-skills-and-rules.md)（本文は英語ですが、コマンドは同じです）
+- 図解つきの日本語解説: [複数の AI CLI で skills 棚とルールの正本を 1 本にまとめる](https://ishizakahiroshi.com/articles/2026/2026-08-30_multi-ai-cli-shared-skills-and-rules/)
 
-手で読まずに済ませたい場合は、同じ内容を機械可読な Markdown でも置いてあります。お使いの AI CLI にこの 2 行を投げれば、確認しながら配線まで実行できます。
+手で読まずに済ませたい場合は、お使いの AI CLI にこの 2 行を投げれば、確認しながら配線まで実行できます。
 
 ```
-https://ishizakahiroshi.com/articles/2026/2026-08-30_multi-ai-cli-shared-skills-and-rules/setup.md
+https://raw.githubusercontent.com/ishizakahiroshi/many-ai-cli/main/docs/manual_shared-skills-and-rules.md
 この URL の手順どおりに、私の環境へ配線してください。停止条件も守ってください。
 ```
 
 中身のあるディレクトリを消さない、同梱 skill の棚には張らない、といった停止条件も同じファイルに書いてあります。
+
+なお公開直後は手順書を個人サイトに置いていましたが、正本が記事本文と 2 箇所に分かれていたので、版管理と PR が効く repo 側へ寄せました。この記事で書いたことを、自分でやり直した形です。
 
 ## あわせて読みたい
 
