@@ -261,6 +261,7 @@ https://raw.githubusercontent.com/ishizakahiroshi/many-ai-cli/main/docs/manual_s
 
 ## あわせて読みたい
 
+- [AIを変えるたび、同じお願いを教え直すのをやめた話](https://note.com/ishizakahiroshi/n/n68ba452849a5)。同じ題材を、コマンドを 1 つも出さずに書いた note 版。手順ではなく「なぜ同じことを何度も教え直すはめになるのか」の方を読みたいときはこちら
 - [Claude Code / Codex / Cursor / Copilot / OpenCode で同じ Agent Skills を共有する。正本 1 箇所 + リンクの設計](https://qiita.com/ishizakahiroshi/items/6821655d5af59a32e50c)。今回の前編。skills の棚を 1 箇所にまとめた回
 - [200 行ルールを疑って、自分の CLAUDE.md を『発火頻度』で仕分け直した話](https://qiita.com/ishizakahiroshi/items/8ffdb968963c4e992662)。正本を索引に保つ側の話。本文をどこまで置くかで悩んだ回
 - [30 個のスキルを積んだ Claude Code に /doctor をかけて、棚卸ししてみた](https://qiita.com/ishizakahiroshi/items/c114346e08dc1f382b0e)。棚が膨らんだ後どうなるか
