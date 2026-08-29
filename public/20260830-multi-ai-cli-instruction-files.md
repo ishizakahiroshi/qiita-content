@@ -7,7 +7,7 @@ tags:
   - opencode
   - CLI
 private: false
-updated_at: '2026-08-30T05:22:58+09:00'
+updated_at: '2026-08-30T05:46:19+09:00'
 id: ffecb88684c29803b3c6
 organization_url_name: null
 slide: false
