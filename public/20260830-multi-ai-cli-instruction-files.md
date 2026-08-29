@@ -24,11 +24,11 @@ agreed_posting_campaign_term: false
 
 全部に同じ本文を置けば動きます。動きますが、ルールを 1 行足すたびに 6 箇所直すことになります。
 
-## 忙しい人向け（AI 音声解説・28 分）
+## 忙しい人向け（AI 音声解説・18 分）
 
 この記事の音声版を NotebookLM で作りました。移動中・作業中の "ながら聴き" にどうぞ。
 
-https://youtu.be/5vudjnGWFKc
+https://youtu.be/TgOwU9vdPvg
 
 ## 前回の記事
 
