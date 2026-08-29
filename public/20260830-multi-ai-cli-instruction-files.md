@@ -1,17 +1,19 @@
 ---
-title: "CLAUDE.md と AGENTS.md と GEMINI.md を全部書くのをやめた。どの AI CLI が何を読むか実測して正本 1 本に寄せる"
+title: CLAUDE.md と AGENTS.md と GEMINI.md を全部書くのをやめた。どの AI CLI が何を読むか実測して正本 1 本に寄せる
 tags:
   - ClaudeCode
   - AIエージェント
-  - Codex
+  - codex
   - opencode
   - CLI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-30T04:05:14+09:00'
+id: ffecb88684c29803b3c6
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-30_instruction-files_hero.png)
