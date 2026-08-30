@@ -1,5 +1,7 @@
 ---
-title: "Command Code Go は月1ドル。無料モデル Laguna S 2.1 の Usage を実測して、自作ダッシュボードに 7 つ目の provider として足した"
+title: >-
+  Command Code Go は月1ドル。無料モデル Laguna S 2.1 の Usage を実測して、自作ダッシュボードに 7 つ目の
+  provider として足した
 tags:
   - CommandCode
   - AIエージェント
@@ -7,11 +9,13 @@ tags:
   - 生成AI
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-31T08:08:39+09:00'
+id: 60348601dbd12d085765
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-01_command-code-go_hero.png)
