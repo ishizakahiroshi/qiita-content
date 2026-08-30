@@ -1,5 +1,5 @@
 ---
-title: "Firefox 拡張に URL ルールを足して v0.2.0 を出した。SPA 追随は pushState の差し替えでは効いていなかった"
+title: Firefox 拡張に URL ルールを足して v0.2.0 を出した。SPA 追随は pushState の差し替えでは効いていなかった
 tags:
   - Firefox
   - ブラウザ拡張
@@ -7,11 +7,13 @@ tags:
   - JavaScript
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-08-30T17:17:17+09:00'
+id: 4914f4c0514d3678d71d
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-08-30_tab-title-prefix-v020_hero.png)
