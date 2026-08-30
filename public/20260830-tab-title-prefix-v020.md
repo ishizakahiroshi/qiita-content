@@ -188,6 +188,9 @@ lint の警告 0 件は、たぶんそれ自体に意味はありません。た
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-08-30_tab-title-prefix-v020-url-rules/
+
 ※ ヘッダー画像とインフォグラフィックと本文の挿絵は AI（画像生成）で作成しています。
 
 書いた人: ishizakahiroshi
