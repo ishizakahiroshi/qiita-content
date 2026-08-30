@@ -176,7 +176,7 @@ Star をいただけると開発の励みになります。使ってみて「こ
 - 初めての Firefox 拡張を AMO に出したら、公開前に 2 回落ちた: https://zenn.dev/ishizakahiroshi/articles/20260703-amo-first-submission-rejected-twice （落ちた理由と、`data_collection_permissions` を足すまでの話）
 - X の複数アカウント運用: Chrome 拡張で挫折 → Firefox Multi-Account Containers に流れ着いた記録: https://zenn.dev/ishizakahiroshi/articles/20260702-x-multi-account-firefox-container （そもそもこの拡張を作ることになった発端）
 
-技術寄りではない、拡張そのものの紹介は note にも書いています。そちらは近日中に公開する予定です。
+技術寄りではない、拡張そのものの紹介は note にも書きました: https://note.com/ishizakahiroshi/n/n8ac8e2ad786a
 
 ## おわりに
 
