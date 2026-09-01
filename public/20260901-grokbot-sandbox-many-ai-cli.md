@@ -18,6 +18,11 @@ agreed_posting_campaign_term: false
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-01_grokbot-sandbox_hero.png)
 
+:::note alert
+**訂正（2026-09-02）**: 本記事は真っ黒の原因を「`CSI 6n`（DSR）への無応答」と結論づけていますが、**これは誤りです。** その後 Linux 実機の生 PTY ログを取ったところ、Claude Code は `ESC[6n` を 1 度も送っておらず、固まってもいませんでした。真因は Hub の表示フィルタが単独 CR の後ろへ `ESC[K`（行末消去）を挿していたことでした。経緯と実測値は続編に書いています。
+https://qiita.com/ishizakahiroshi/items/6a9edc768efea629bf07
+:::
+
 SuperGrok の課金画面に「期間限定で 61% 割引、3ヶ月で ¥5,400」と出ていました。月あたり 1,800 円。通常は 4,560 円/月なので、迷う理由がありません。押しました。
 
 そうしたら、Grok Bot という常駐 AI エージェントが付いてきて、そのエージェントが Debian 13 のクラウド PC を丸ごと 1 台持っていました。8 コア、16GB、128GB。まだ本格的に使い込んでもいないのに、その構造と便利さのほうに驚いてしまった、という話です。
