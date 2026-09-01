@@ -1,17 +1,19 @@
 ---
-title: "保存する個人データを減らす migration は、デプロイの順番を間違えると本番が壊れる"
+title: 保存する個人データを減らす migration は、デプロイの順番を間違えると本番が壊れる
 tags:
   - Supabase
   - PostgreSQL
-  - Cloudflare
+  - cloudflare
   - 個人開発
-  - セキュリティ
+  - Security
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-01T14:17:37+09:00'
+id: 3b457ffedd146b8bb496
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![保存する個人データを減らす migration は、デプロイの順番を間違えると本番が壊れる](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-01_manabi-map-v090_hero.png)

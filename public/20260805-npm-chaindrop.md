@@ -7,7 +7,7 @@ tags:
   - GitHubActions
   - サプライチェーン攻撃
 private: true
-updated_at: '2026-09-01T12:27:26+09:00'
+updated_at: '2026-09-01T14:17:37+09:00'
 id: b98de3395d11de91af2e
 organization_url_name: null
 slide: false
