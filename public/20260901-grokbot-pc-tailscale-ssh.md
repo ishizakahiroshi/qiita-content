@@ -7,7 +7,7 @@ tags:
   - debug
   - Terminal
 private: false
-updated_at: '2026-09-02T00:16:22+09:00'
+updated_at: '2026-09-02T00:25:35+09:00'
 id: 6a9edc768efea629bf07
 organization_url_name: null
 slide: false
