@@ -2,16 +2,18 @@
 title: AI エージェントに開発マシンの鍵を渡していいのか。借り物のサンドボックスを実測して、9 案を比べた
 tags:
   - AIエージェント
-  - セキュリティ
+  - Security
   - Docker
   - GitHub
   - 開発環境
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-09-03T13:28:42+09:00'
+id: 52030bd9ae36f77124a7
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-03_ai-key-boundary_hero.png)
