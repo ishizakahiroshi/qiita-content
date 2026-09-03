@@ -20,6 +20,12 @@ agreed_posting_campaign_term: false
 
 ![借りている箱と自分のマシン。境界はどこにあったか（記事全体の要約）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-03_ai-key-boundary_qiita_infographic.png)
 
+## 忙しい人向け（AI 音声解説・24 分）
+
+この記事の音声版を NotebookLM で作りました。移動中・作業中の "ながら聴き" にどうぞ。
+
+https://youtu.be/_9tEPDtmH7Q
+
 ## 主題: 借りているサンドボックスと、自分の開発マシン。境界はどこにあるのか
 
 先に結論だけ置きます。
