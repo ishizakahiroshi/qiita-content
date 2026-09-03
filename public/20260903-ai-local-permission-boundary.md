@@ -142,7 +142,7 @@ ls /etc/cron.d                     # No such file or directory
 
 定期実行の口がゼロです。あとで「夜間に定期実行したい」という要件が出てくるので、ここが効きます。
 
-![借りている箱の中身。永続するものが 1 つもない](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-03_ai-key-boundary_qiita_fig1.png)
+![借りている箱の中身。永続するものが 1 つもない](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-03_ai-key-boundary_qiita_fig1-v2.png)
 
 図にすると、箱の中身は書き込み層 1 枚の上に全部が乗っているだけです。外から差し込まれているのは Docker が常に付ける 3 本で、永続ボリュームは 0 本。箱が終われば、置いたものは残りません。
 
@@ -821,7 +821,7 @@ sandbox = "elevated"
 
 サンドボックスユーザーは存在するのに、設定は承認なしの全アクセスです。**いちばん緩いツールが、そのマシンの実際の境界になります。** 玄関に鍵を付けても、勝手口が開いていれば施錠したことにはなりません。
 
-![同じマシンに全部ある。そして境界は 1 本も無い](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-03_ai-key-boundary_qiita_fig5.png)
+![同じマシンに全部ある。そして境界は 1 本も無い](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-03_ai-key-boundary_qiita_fig5-v2.png)
 
 図の左が、この 1 台に置いてあるものです。右が境界になりそうだったもので、実測すると 3 つとも効いていませんでした。ユーザーを分けても ACL で素通りし、アプリは常に許可、別のツールは承認なしの全アクセスです。
 
