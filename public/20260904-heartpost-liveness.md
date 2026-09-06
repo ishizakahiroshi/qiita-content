@@ -1,5 +1,5 @@
 ---
-title: "レンタルサーバーの死活監視を root なしで作る。cron から 1 回だけ動く agent と、来ないことを見る monitor"
+title: レンタルサーバーの死活監視を root なしで作る。cron から 1 回だけ動く agent と、来ないことを見る monitor
 tags:
   - Go
   - 監視
@@ -7,11 +7,13 @@ tags:
   - 個人開発
   - レンタルサーバー
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-06T13:06:41+09:00'
+id: 3caeb84caf01c62ce06e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-04_heartpost-liveness_hero.png)
