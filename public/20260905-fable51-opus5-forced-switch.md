@@ -1,17 +1,19 @@
 ---
-title: "Claude Fable 5.1 が [cyber] 判定で Opus 4.8 に落とされたとき、Opus 5 のまま続きを走らせる"
+title: 'Claude Fable 5.1 が [cyber] 判定で Opus 4.8 に落とされたとき、Opus 5 のまま続きを走らせる'
 tags:
   - ClaudeCode
   - Claude
   - AIエージェント
-  - セキュリティ
+  - Security
   - コード監査
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-06T13:22:39+09:00'
+id: f4e53dc483ba42d33f6a
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-05_fable51-opus5-forced-switch_hero.png)
