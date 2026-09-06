@@ -1,5 +1,5 @@
 ---
-title: "作った PR が、リポジトリの持ち主にも 404。GitHub で bot アカウントが隠れたときの切り分けと回避手順"
+title: 作った PR が、リポジトリの持ち主にも 404。GitHub で bot アカウントが隠れたときの切り分けと回避手順
 tags:
   - GitHub
   - 個人開発
@@ -7,11 +7,13 @@ tags:
   - AIエージェント
   - bot
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-06T13:14:27+09:00'
+id: c9aea320ca2e76fa1fbe
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-04_invisible-bot-pr_hero.png)
