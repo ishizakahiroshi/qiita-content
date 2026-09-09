@@ -39,6 +39,14 @@ agreed_posting_campaign_term: false
 npm i -g many-ai-cli
 ```
 
+すでに入れている方は、下記で v0.8.0 に上がります。
+
+```bash
+npm i -g many-ai-cli@latest
+```
+
+winget から入れた場合は `winget upgrade ishizakahiroshi.many-ai-cli` です。
+
 入れたら 1 回だけ `many-ai-cli setup` を実行します。これがデスクトップとスタートアップにショートカットを作り、設定ディレクトリ `~/.many-ai-cli/` を用意します。PATH に載らない場合は `npm bin -g` の出力を PATH に足してください。
 
 起動後の見え方は OS で違います。
