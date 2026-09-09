@@ -1,5 +1,5 @@
 ---
-title: "AI CLI を 7 本並べたら、次に要るのは「契約」と「引き継ぎ」と「委譲」だった。many-ai-cli v0.8.0"
+title: AI CLI を 7 本並べたら、次に要るのは「契約」と「引き継ぎ」と「委譲」だった。many-ai-cli v0.8.0
 tags:
   - Go
   - TypeScript
@@ -7,11 +7,13 @@ tags:
   - 個人開発
   - CLI
 private: false
-updated_at: ''
-id: ''
+updated_at: '2026-09-09T16:17:16+09:00'
+id: 49f6a29a43bf64168c1a
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー（記事トップ）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-09_many-ai-cli-v080_hero.png)
