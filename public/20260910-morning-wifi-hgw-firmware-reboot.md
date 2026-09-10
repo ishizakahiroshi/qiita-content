@@ -196,6 +196,9 @@ IPv6 の条件を、家は満たしていなかったわけです。
 
 ---
 
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-09-10_morning-wifi-hgw-firmware-reboot/
+
 ※ ヘッダー画像は AI（画像生成）で作成しています。
 
 ※ 本文の挿絵も AI（画像生成）で作成しています。
