@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare Pages の SPA フォールバックが 308 になる。直し方と、直しても既存ブラウザに届かない理由"
+title: Cloudflare Pages の SPA フォールバックが 308 になる。直し方と、直しても既存ブラウザに届かない理由
 tags:
   - CloudflarePages
   - SPA
@@ -7,11 +7,13 @@ tags:
   - 個人開発
   - リダイレクト
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-12T01:59:50+09:00'
+id: 0b4e0b146ec0cbeb00fe
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-12_cached-308_hero.png)
