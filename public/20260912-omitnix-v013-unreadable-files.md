@@ -1,5 +1,5 @@
 ---
-title: "「解析できなかった」を「何も無い」に見せない。静的コード索引 omitnix を出しました"
+title: 「解析できなかった」を「何も無い」に見せない。静的コード索引 omitnix を出しました
 tags:
   - Python
   - CLI
@@ -7,11 +7,13 @@ tags:
   - 静的解析
   - AIエージェント
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-12T16:54:24+09:00'
+id: ecb2576dd459f058920b
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-12_omitnix-v013_hero.png)
