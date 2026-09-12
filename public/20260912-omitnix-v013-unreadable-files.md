@@ -347,7 +347,7 @@ ADAPTER = IniAdapter()
 いずれかに心当たりがあれば、`pip install "omitnix[all]"` で試せます。初期化コマンドはなく、設定ファイルも書かずに動きます。
 
 - 紹介ページ（スクショと機能一覧）: https://ishizakahiroshi.com/work.html?id=omitnix
-- 使い方と設計の解説（英語・7 節）: https://ishizakahiroshi.com/articles/omitnix/usage.html
+- 使い方と設計の解説（日本語・英語の切り替えあり・7 節）: https://ishizakahiroshi.com/articles/omitnix/usage.html
 - リポジトリ（Issue / PR 歓迎）: https://github.com/ishizakahiroshi/omitnix
 - PyPI: https://pypi.org/project/omitnix/
 
@@ -364,3 +364,8 @@ Star をいただけると開発の励みになります。使ってみて「こ
 成熟度はまだ開発初期で、個人の趣味プロジェクトです。サポートもありません。テストの穴も、変異テストで見つかった素通り 72 件のうち埋めたのは 3 件です。全部は埋まっていません。
 
 小さく。次に何か出すときも、出したものを素の環境で 1 回動かすところまでを、ひと続きにします。
+
+---
+
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-09-12_omitnix-v013-unreadable-files/
