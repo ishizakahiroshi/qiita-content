@@ -1,5 +1,5 @@
 ---
-title: "API キーなしの音声入力を Web Speech API で作る。Chrome 拡張（MV3）とデスクトップ版（Rust）を共通コアから分解した"
+title: API キーなしの音声入力を Web Speech API で作る。Chrome 拡張（MV3）とデスクトップ版（Rust）を共通コアから分解した
 tags:
   - 音声入力
   - chrome-extension
@@ -7,11 +7,13 @@ tags:
   - Rust
   - TypeScript
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-24T10:14:32+09:00'
+id: efa7d306ceeb7dd9b2d7
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-24_vtype-architecture_hero.png)
