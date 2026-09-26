@@ -1,17 +1,19 @@
 ---
-title: "WebアプリのAndroid化で起動直後に落ちるとき。Manifestと端末のAPKを確認する"
+title: WebアプリのAndroid化で起動直後に落ちるとき。Manifestと端末のAPKを確認する
 tags:
   - Android
   - TWA
-  - CustomTabs
+  - customTabs
   - adb
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-27T05:37:53+09:00'
+id: 0412bf787254e53c0309
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![WebからAndroidへ](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-27_android-web-pilot-crash/01_2026-09-27_android-pilot_hero.png)
