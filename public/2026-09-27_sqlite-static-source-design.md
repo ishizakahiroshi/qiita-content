@@ -1,17 +1,19 @@
 ---
-title: "Cloudflareの無料枠を考える前に、公開データをSQLiteと静的配信へ分ける"
+title: Cloudflareの無料枠を考える前に、公開データをSQLiteと静的配信へ分ける
 tags:
   - SQLite
-  - Cloudflare
+  - cloudflare
   - Supabase
   - 個人開発
   - 設計
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-27T05:36:09+09:00'
+id: 0ae508ed2ee095761154
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![公開データの置き場所を見直す](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-27_sqlite-static-source-design/01_2026-09-27_sqlite-static_hero.png)
