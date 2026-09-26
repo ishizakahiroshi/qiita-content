@@ -1,5 +1,7 @@
 ---
-title: "Codex CLI 0.157.0 が Windows で「path must be shorter than SUN_LEN」と言って起動しない。原因は CODEX_HOME のパスの長さだった"
+title: >-
+  Codex CLI 0.157.0 が Windows で「path must be shorter than SUN_LEN」と言って起動しない。原因は
+  CODEX_HOME のパスの長さだった
 tags:
   - CodexCLI
   - Windows
@@ -7,11 +9,13 @@ tags:
   - CLI
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-26T14:21:20+09:00'
+id: e1185939731120eb54dd
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-26_codex-sun-len_hero.png)
