@@ -1,5 +1,7 @@
 ---
-title: "Codex CLI 0.157 が Windows で空のターミナル窓を起動のたびに開く。config.toml の 1 行で止めた（ブラウザ操作は残したまま）"
+title: >-
+  Codex CLI 0.157 が Windows で空のターミナル窓を起動のたびに開く。config.toml の 1
+  行で止めた（ブラウザ操作は残したまま）
 tags:
   - CodexCLI
   - Windows
@@ -7,11 +9,13 @@ tags:
   - AIエージェント
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-26T17:11:24+09:00'
+id: 2e87da3628a9ac7322c3
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヘッダー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-26_codex-empty-windows_hero.png)
