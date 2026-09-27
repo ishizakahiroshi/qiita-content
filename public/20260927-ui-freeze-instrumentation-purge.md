@@ -11,7 +11,7 @@ updated_at: ''
 id: ''
 organization_url_name: ''
 slide: false
-ignorePublish: false
+ignorePublish: true
 ---
 
 ![フリーズを記録し、調査の仕込みを出荷前に外す](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-09-27_freeze-purge_hero.png)
