@@ -11,7 +11,7 @@ updated_at: ''
 id: ''
 organization_url_name: ''
 slide: false
-ignorePublish: false
+ignorePublish: true
 ---
 
 ![広告の更新をアプリのデプロイから分ける](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-27_github-json-ad-catalog/01_2026-09-27_github-json-ad-catalog_hero.png)
