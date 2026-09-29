@@ -1,5 +1,5 @@
 ---
-title: "Claude Code の /doctor prompt-audit で指示ファイルを監査したら、読み込まれていない CLAUDE.md が出てきた"
+title: Claude Code の /doctor prompt-audit で指示ファイルを監査したら、読み込まれていない CLAUDE.md が出てきた
 tags:
   - ClaudeCode
   - CLAUDE.md
@@ -7,11 +7,13 @@ tags:
   - Windows
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-30T07:37:12+09:00'
+id: 7cc143942aab2b98e741
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![机に積まれた書類の束を、手元の明かりで一枚ずつ照らしている](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-29_claude-code-prompt-audit/01_2026-09-29_prompt-audit_hero.png)
