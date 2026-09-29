@@ -1,17 +1,21 @@
 ---
-title: Cloudflare Pages から Workers へ移したら管理画面だけ 404。静的ファイルの照合では見えない秘密の持ち越し漏れを、配備の手前で止める
+title: >-
+  Cloudflare Pages から Workers へ移したら管理画面だけ
+  404。静的ファイルの照合では見えない秘密の持ち越し漏れを、配備の手前で止める
 tags:
   - cloudflare
   - CloudflareWorkers
-  - wrangler
+  - Wrangler
   - Supabase
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-30T07:33:28+09:00'
+id: 3744dd94411fc10c1dde
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![照合は全部通った、なのに管理画面だけ 404](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-29_workers-migration-missing-secrets/01_2026-09-29_workers-missing-secrets_hero.png)
