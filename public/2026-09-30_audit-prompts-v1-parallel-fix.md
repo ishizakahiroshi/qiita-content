@@ -1,17 +1,19 @@
 ---
-title: "155項目をAIエージェントに並列で直させる前に決めること。監査プロンプト集 v1.0.0 の設計判断"
+title: 155項目をAIエージェントに並列で直させる前に決めること。監査プロンプト集 v1.0.0 の設計判断
 tags:
   - AIエージェント
-  - セキュリティ
+  - Security
   - プロンプトエンジニアリング
   - ClaudeCode
   - 生成AI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-09-30T08:55:59+09:00'
+id: d370b3ccc18d8e423f71
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-09-30_audit-prompts-v1-parallel-fix/01_2026-09-30_audit-prompts-v1_hero.png)
