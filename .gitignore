@@ -1,3 +1,8 @@
 .remote
 node_modules
 .env
+
+docs/local/
+
+# docsweep のローカル state / 旧世代 backup（v0.4+ は no-op だが旧版が生成し得るため常に ignore）
+.docsweep/

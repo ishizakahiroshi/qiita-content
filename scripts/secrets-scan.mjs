@@ -48,8 +48,25 @@ const ALLOWED_EMAIL_DOMAINS = [
   'users.noreply.github.com',  // GitHub の noreply
   'anthropic.com',             // AI コミット footer（Co-Authored-By）
   'example.com',               // ドキュメントの例示用
+  'example.net',               // ドキュメントの例示用（RFC 2606 予約）
+  'example.org',               // ドキュメントの例示用（RFC 2606 予約）
+  'example.invalid',           // テスト fixture 用（RFC 2606 予約・名前解決されない）
   // ここに各プロジェクトの公開窓口ドメインを追記する（例: 'manabi-map.app'）
 ];
+
+// 一致した値そのものはレポートへ出さない。
+// このレポートは CI のログと端末のスクロールバックに残り、どちらも保持される。
+// 公開リポの Actions ログは誰でも読めるので、検知した秘密をそこへ書き出しては
+// 走査器自身が漏洩経路になる。突き合わせに要る情報（長さ・先頭末尾 1 文字）だけ残し、
+// 中身は file:line を開いて確認させる。
+// Do not print the matched value. This report lands in CI logs and terminal scrollback,
+// both retained and public for public repos; writing a detected secret there makes the
+// scanner its own leak path.
+function maskMatch(matched) {
+  const s = String(matched);
+  if (s.length <= 2) return `<${s.length} chars, masked>`;
+  return `${s[0]}...${s[s.length - 1]} <${s.length} chars, masked>`;
+}
 
 function isAllowedEmail(matched) {
   const email = matched.toLowerCase();
@@ -60,7 +77,7 @@ function isAllowedEmail(matched) {
 
 // === Public product-name allowlist (kb watchlist) ===
 // kb 台帳名の括弧なし変形（expandNameVariants）が、世界的な公開 OSS 名や一般英単語と
-// 衝突して誤検知だけを生む場合にここへ書く。括弧付きフル名（例: 'Nextcloud(メイジエ)'）と
+// 衝突して誤検知だけを生む場合にここへ書く。括弧付きフル名（例: 'ServiceName(CompanyName)'）と
 // servers.csv のホスト名は引き続き検知されるため、会社との紐付き漏洩は別途捕捉される。
 const ALLOWED_PUBLIC_NAMES = [
   'Nextcloud', // 公開 OSS 製品名
@@ -112,9 +129,9 @@ function parseCSV(text) {
 // === Watchlist loading ===
 
 // Some kb names include a parenthetical category/disambiguator
-// (e.g. "クロノス(勤怠)" / "Nextcloud(メイジエ)"). For matching purposes
+// (e.g. "ProductName(Purpose)" / "ServiceName(CompanyName)"). For matching purposes
 // we want BOTH the full string AND the bare name before the paren,
-// so a leak of just "クロノス" (without paren) is still caught.
+// so a leak of just "ProductName" (without paren) is still caught.
 function expandNameVariants(value) {
   const variants = new Set();
   if (value.length >= MIN_NEEDLE_LEN) variants.add(value);
@@ -213,7 +230,10 @@ function getStructuralPatterns() {
       // RFC1918 (10/8, 172.16/12, 192.168/16) のみを内部 LAN トポロジー漏洩として検知する。
       name: 'Private IPv4 (RFC1918)',
       regex: /\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3})\b/g,
-      suggestion: '内部 IP を一般化または削除 / Generalize or remove internal IP',
+      // 置換先を名指しする: RFC5737 TEST-NET は層 3（CI の gitleaks で公開 IP を検知する構成）でも
+      // 例示用として許容されるのが通例で、この置換なら層 2 / 層 3 の両方を一度で通る（2026-09-01 制定。
+      // 「一般化」だけ案内すると CGNAT 等の公開レンジへ置換されて CI 層で二度目に止まる）。
+      suggestion: 'RFC5737 TEST-NET (192.0.2.x / 198.51.100.x / 203.0.113.x) へ置換または削除 / Replace with RFC5737 TEST-NET documentation IPs or remove',
     },
     {
       // allowlist（ALLOWED_EMAILS / ALLOWED_EMAIL_DOMAINS）に無いメールアドレスは全件ブロック。
@@ -324,7 +344,13 @@ function scanFile(path, needleMap, structuralPatterns) {
   let stat;
   try { stat = statSync(path); } catch { return []; }
   if (!stat.isFile()) return [];
-  if (stat.size > MAX_FILE_SIZE) return [];
+  if (stat.size > MAX_FILE_SIZE) {
+    // 無音でスキップすると「scanned N件」に数だけ入り、走査済みに見えて
+    // しまう。1MB超のファイルへ秘密を置けばゲートを素通りできてしまうため、
+    // 少なくとも気づけるようにstderrへ出す（ブロック挙動は変えない）。
+    console.error(`WARN: skipped ${path} (${stat.size} bytes > ${MAX_FILE_SIZE}) — too large to scan for secrets`);
+    return [];
+  }
 
   let content;
   try { content = readFileSync(path, 'utf8'); } catch { return []; }
@@ -381,9 +407,14 @@ function formatHitsText(hits, mode) {
   lines.push(`ブロック: スキャン対象に ${hits.length} 件の混入を検知`);
   lines.push('================================================================');
   lines.push('');
+  lines.push('Matched values are masked on purpose: this report is written to CI logs and');
+  lines.push('terminal scrollback, both of which are retained. Open the cited file:line yourself.');
+  lines.push('一致した値は意図的に伏せている。本レポートは CI ログと端末のスクロールバックに残るため。');
+  lines.push('中身は引用された file:line を自分で開いて確認すること。');
+  lines.push('');
   for (const h of hits) {
     lines.push(`  ${h.file}:${h.lineNumber}`);
-    lines.push(`    matched : '${h.matched}'`);
+    lines.push(`    matched : ${maskMatch(h.matched)}`);
     lines.push(`    source  : ${h.source}`);
     lines.push(`    suggest : ${h.suggestion}`);
     lines.push('');
