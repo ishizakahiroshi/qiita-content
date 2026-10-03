@@ -7,11 +7,13 @@ tags:
   - Security
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-03T21:58:55+09:00'
+id: cdbe8d6a65c4d17e564a
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![Rust候補を30リポジトリへ導入し、追加検査を段階的に有効化するイメージ](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/128ea0bce064e34023919e7256b6e968a3d866bd/docs/bot/article/rust-prerelease-rollout/01_2026-10-03_rust-prerelease-rollout_hero.png)
