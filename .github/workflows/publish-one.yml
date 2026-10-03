@@ -157,7 +157,7 @@ jobs:
             if (d.private !== false || d.ignorePublish !== false || d.slide !== false) stop('Publication frontmatter mismatch');
             if (d.organization_url_name !== '') stop('Organization assignment is outside this task');
             if (d.id && d.id !== id) stop('Source item ID not consistent with durable receipt');
-            if (/[—―]/u.test(article.content) || /(?:[A-Za-z]:[\\/]|\/Users\/|\/home\/[^\s/]+\/)/u.test(article.content)) stop('Draft contains banned dash or local absolute path');
+            if (/[—―]/u.test(article.content) || /(?:(?<![A-Za-z0-9+.-])[A-Za-z]:[\\/]|\/Users\/|\/home\/[^\s/]+\/)/u.test(article.content)) stop('Draft contains banned dash or local absolute path');
             if (/TODO|PLACEHOLDER|公開後に.*差し替え/u.test(article.content)) stop('Draft contains unfinished placeholders');
             if (/<img\b/i.test(article.content)) stop('HTML images are outside the reviewed inline PNG route');
             const references = [...article.content.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)];
