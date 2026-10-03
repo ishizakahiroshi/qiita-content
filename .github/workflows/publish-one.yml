@@ -1,0 +1,230 @@
+name: Publish one reviewed dots article
+on:
+  workflow_dispatch:
+    inputs:
+      source_sha:
+        description: Reviewed doxguard commit (40 lowercase hex)
+        required: true
+        type: string
+      reviewed_sha:
+        description: Independently reviewed source commit (must equal source_sha)
+        required: true
+        type: string
+      publish_approved:
+        description: Article, all four images, facts and privacy have been reviewed; publish this one article
+        required: true
+        type: boolean
+        default: false
+      existing_item_id:
+        description: Optional verified item ID to recover an unknown publication; never create another item
+        required: false
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: qiita-one-rust-prerelease-rollout
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: inputs.publish_approved
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+      - name: Validate fixed target and source
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          REVIEWED_SHA: ${{ inputs.reviewed_sha }}
+        run: |
+          test "$GITHUB_REPOSITORY" = 'ishizakahiroshi/qiita-content'
+          [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$SOURCE_SHA" = "$REVIEWED_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          branch='qiita-one/rust-prerelease-rollout'
+          remote_status=0
+          git ls-remote --exit-code --heads origin "$branch" >/dev/null || remote_status=$?
+          if test "$remote_status" = 0; then
+            git fetch origin "$branch"
+            git checkout -B "$branch" FETCH_HEAD
+          elif test "$remote_status" = 2; then
+            git checkout -b "$branch"
+          else
+            exit "$remote_status"
+          fi
+      - name: Install fixed CLI in runner temporary directory
+        run: npm install --prefix "$RUNNER_TEMP/qiita-one-cli" --ignore-scripts --no-audit --no-fund @qiita/qiita-cli@1.10.0
+      - name: Prepare, publish one basename, and read back
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          REVIEWED_SHA: ${{ inputs.reviewed_sha }}
+          EXISTING_ITEM_ID: ${{ inputs.existing_item_id }}
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
+        shell: node {0}
+        run: |
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const cp = require('node:child_process');
+          const crypto = require('node:crypto');
+          const tools = path.join(process.env.RUNNER_TEMP, 'qiita-one-cli');
+          const matter = require(path.join(tools, 'node_modules/gray-matter'));
+          const key = 'rust-prerelease-rollout';
+          const account = 'ishizakahiroshi';
+          const source = process.env.SOURCE_SHA;
+          const sourceBase = `https://raw.githubusercontent.com/ishizakahiroshi/doxguard/${source}/docs/bot/article/${key}/`;
+          const marker = `<!-- dots-article:${key} -->`;
+          const root = path.join(process.env.RUNNER_TEMP, 'qiita-one-root');
+          const out = path.join('publication', key);
+          const receiptPath = path.join(out, 'publication.json');
+          const targetPath = path.join(out, `${key}.md`);
+          const run = (args) => cp.execFileSync('git', args, {stdio: 'pipe'});
+          const stop = (reason) => { throw new Error(reason); };
+          fs.mkdirSync(out, {recursive: true});
+          fs.mkdirSync(path.join(root, 'public'), {recursive: true});
+          fs.writeFileSync(path.join(root, 'qiita.config.json'), JSON.stringify({includePrivate:false}));
+          const textFetch = async (url) => {
+            const r = await fetch(url);
+            if (!r.ok) stop(`Public source unavailable: HTTP ${r.status}`);
+            return r.text();
+          };
+          const api = async (route) => {
+            const r = await fetch(`https://qiita.com/api/v2/${route}`, {
+              headers: {Authorization: `Bearer ${process.env.QIITA_TOKEN}`}
+            });
+            if (!r.ok) stop(`Qiita read failed: HTTP ${r.status}`);
+            return r.json();
+          };
+          const checkItem = (item) => {
+            if (item.user?.id !== account || !item.body?.includes(marker)) stop('Item account or stable article marker mismatch');
+            if (item.private !== false) stop('Item is not public');
+          };
+          const persist = (receipt) => {
+            fs.writeFileSync(receiptPath, JSON.stringify(receipt, null, 2) + '\n');
+            run(['add', '--', receiptPath, targetPath]);
+            const diff = cp.spawnSync('git', ['diff', '--cached', '--quiet']);
+            if (diff.error || ![0, 1].includes(diff.status)) stop('Cannot inspect staged publication receipt');
+            if (diff.status === 1) {
+              run(['commit', '-m', `Record single article ${receipt.state}`]);
+              run(['push', 'origin', `HEAD:refs/heads/qiita-one/${key}`]);
+            }
+          };
+          (async () => {
+            if (!/^[0-9a-f]{40}$/.test(source) || source !== process.env.REVIEWED_SHA) stop('Source/review SHA mismatch');
+            if (!process.env.QIITA_TOKEN) stop('QIITA_TOKEN is absent');
+            const user = await api('authenticated_user');
+            if (user.id !== account) stop('Authenticated Qiita account mismatch');
+            console.log('Qiita account verified');
+            const prior = fs.existsSync(receiptPath) ? JSON.parse(fs.readFileSync(receiptPath, 'utf8')) : null;
+            if (prior && (prior.article_key !== key || prior.account !== account)) stop('Receipt identity mismatch');
+            let id = prior?.item_id || '';
+            let remoteItem = null;
+            const suppliedId = process.env.EXISTING_ITEM_ID || '';
+            if (suppliedId) {
+              if (!/^[0-9a-f]{20}$/.test(suppliedId)) stop('Invalid recovery item ID');
+              if (id && id !== suppliedId) stop('Recovery ID differs from receipt');
+              const existing = await api(`items/${suppliedId}`);
+              checkItem(existing);
+              remoteItem = existing;
+              id = suppliedId;
+            }
+            if (prior && ['unknown', 'publishing'].includes(prior.state) && !id) {
+              stop('Previous publication outcome is unknown. Verify existing Qiita item, then supply its ID; no new POST allowed.');
+            }
+            if (id) {
+              remoteItem = remoteItem || await api(`items/${id}`);
+              checkItem(remoteItem);
+              const knownHashes = [prior?.confirmed_body_sha256, prior?.pending_body_sha256].filter(Boolean);
+              const remoteHash = crypto.createHash('sha256').update(remoteItem.body).digest('hex');
+              if (!knownHashes.length || !knownHashes.includes(remoteHash)) stop('Existing article body is not the confirmed or pending body; reconcile remote edits before updating');
+            }
+            const raw = await textFetch(sourceBase + 'draft.md');
+            if (!raw.startsWith('---\n') && !raw.startsWith('---\r\n')) stop('Draft requires Qiita YAML frontmatter');
+            const article = matter(raw);
+            const d = article.data;
+            if (typeof d.title !== 'string' || !d.title.trim()) stop('Missing title');
+            if (!Array.isArray(d.tags) || d.tags.length < 1 || d.tags.length > 5 || d.tags.some(t => typeof t !== 'string' || !t.trim())) stop('Invalid tags');
+            if (d.private !== false || d.ignorePublish !== false || d.slide !== false) stop('Publication frontmatter mismatch');
+            if (d.organization_url_name !== '') stop('Organization assignment is outside this task');
+            if (d.id && d.id !== id) stop('Source item ID not consistent with durable receipt');
+            if (/[—―]/u.test(article.content) || /(?:[A-Za-z]:[\\/]|\/Users\/|\/home\/[^\s/]+\/)/u.test(article.content)) stop('Draft contains banned dash or local absolute path');
+            if (/TODO|PLACEHOLDER|公開後に.*差し替え/u.test(article.content)) stop('Draft contains unfinished placeholders');
+            if (/<img\b/i.test(article.content)) stop('HTML images are outside the reviewed inline PNG route');
+            const references = [...article.content.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)];
+            if (references.length !== 4) stop('Exactly four inline PNG image references are required');
+            const imageUrls = [];
+            const roles = new Set();
+            const numbers = new Set();
+            let body = article.content;
+            for (const match of references) {
+              const name = match[1].replace(/^\.\//, '');
+              const asset = /^(0[1-4])_\d{4}-\d{2}-\d{2}_rust-prerelease-rollout_(hero|infographic|illustration|fig)\.png$/.exec(name);
+              if (!asset) stop('Final PNG assets require numbers 01-04 and roles hero/infographic/illustration/fig');
+              numbers.add(asset[1]);
+              roles.add(asset[2]);
+              const url = sourceBase + name;
+              const r = await fetch(url);
+              if (!r.ok) stop(`Image unavailable: HTTP ${r.status}`);
+              const bytes = Buffer.from(await r.arrayBuffer());
+              if (bytes.length < 24 || bytes.subarray(0,8).toString('hex') !== '89504e470d0a1a0a') stop('Invalid PNG image');
+              if (!bytes.readUInt32BE(16) || !bytes.readUInt32BE(20)) stop('Invalid PNG dimensions');
+              imageUrls.push(url);
+              body = body.replace(match[0], match[0].replace(match[1], url));
+            }
+            if (new Set(imageUrls).size !== 4 || roles.size !== 4 || numbers.size !== 4) stop('Four distinct final image roles and numbers are required');
+            body = body.replaceAll(marker, '').trimEnd() + '\n\n' + marker + '\n';
+            const data = {title:d.title, tags:d.tags, private:false, updated_at:remoteItem?.updated_at || '', id:id || '', organization_url_name:'', slide:false, ignorePublish:false};
+            const prepared = matter.stringify(body, data);
+            const localMd = path.join(root, 'public', `${key}.md`);
+            fs.writeFileSync(localMd, prepared);
+            fs.writeFileSync(targetPath, prepared);
+            const receipt = {
+              article_key:key, account, state:'unknown', item_id:id || null,
+              source_repo:'ishizakahiroshi/doxguard', source_sha:source,
+              reviewed_sha:process.env.REVIEWED_SHA, run_id:process.env.GITHUB_RUN_ID,
+              confirmed_body_sha256:remoteItem ? crypto.createHash('sha256').update(remoteItem.body).digest('hex') : null,
+              pending_body_sha256:crypto.createHash('sha256').update(body).digest('hex'), image_urls:imageUrls
+            };
+            // Durable uncertainty is written BEFORE any external publication. A cancelled runner cannot safely create again.
+            persist(receipt);
+            const cli = path.join(tools, 'node_modules/@qiita/qiita-cli/dist/main.js');
+            if (!fs.existsSync(cli)) stop('Fixed CLI entrypoint is missing; receipt remains unknown');
+            const result = cp.spawnSync(process.execPath, [cli, 'publish', key, '--root', root, '--config', root], {
+              env:process.env, encoding:'utf8', timeout:240000
+            });
+            // Do not print CLI output: it can contain private API error bodies or other synced article names.
+            if (result.status !== 0) stop('Single article CLI failed; receipt remains unknown. Inspect privately and reconcile before retry.');
+            const publishedText = fs.readFileSync(localMd, 'utf8');
+            const published = matter(publishedText);
+            id = published.data.id;
+            if (typeof id !== 'string' || !/^[0-9a-f]{20}$/.test(id)) stop('CLI did not write a valid item ID; receipt remains unknown');
+            fs.writeFileSync(targetPath, publishedText);
+            receipt.item_id = id;
+            receipt.confirmed_body_sha256 = receipt.pending_body_sha256;
+            receipt.url = `https://qiita.com/${account}/items/${id}`;
+            receipt.state = 'published';
+            persist(receipt);
+            const item = await api(`items/${id}`);
+            checkItem(item);
+            if (item.title !== d.title || item.body !== body || imageUrls.some(url => !item.body.includes(url))) stop('Published body or image references differ');
+            const page = await textFetch(receipt.url);
+            if (!page.includes(id)) stop('Public page identity not found');
+            receipt.state = 'verified-http';
+            receipt.verified_at = new Date().toISOString();
+            receipt.visual_acceptance = 'pending-browser';
+            persist(receipt);
+            console.log(`Published one article: ${receipt.url}; browser visual check still required`);
+          })().catch(error => { console.error(error.message); process.exitCode = 1; });
+      - name: Save only the target article and receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qiita-one-rust-prerelease-rollout-${{ github.run_id }}
+          path: |
+            publication/rust-prerelease-rollout/publication.json
+            publication/rust-prerelease-rollout/rust-prerelease-rollout.md
+          if-no-files-found: ignore

@@ -6,6 +6,9 @@ on:
     branches:
       - main
       - master
+    paths-ignore:
+      - '.github/workflows/publish.yml'
+      - '.github/workflows/publish-one.yml'
   workflow_dispatch:
 
 permissions:
