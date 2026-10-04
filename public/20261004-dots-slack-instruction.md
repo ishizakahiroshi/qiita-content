@@ -1,5 +1,5 @@
 ---
-title: "ChatGPTとClaudeからSlack経由でdotsへ依頼する運用を組み立てる"
+title: ChatGPTとClaudeからSlack経由でdotsへ依頼する運用を組み立てる
 tags:
   - ChatGPT
   - Claude
@@ -7,11 +7,13 @@ tags:
   - MCP
   - GitHub
 private: false
-updated_at: ''
-id: ''
+updated_at: '2026-10-04T14:18:35+09:00'
+id: 6c7e68815711017c981b
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 この記事自体もdotsが執筆しています。dotsが本文と全5画像を制作し、私は事実整理、手元での独立検収、Zenn・Qiita・noteへの公開を担当する分担です。2026年10月4日時点の手元の運用記録と公式資料をもとに、再現するための手順をまとめます。
