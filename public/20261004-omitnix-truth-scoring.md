@@ -1,5 +1,5 @@
 ---
-title: "6言語で同じ動きを再現したら、正解に対する再現率は約49%だった"
+title: 6言語で同じ動きを再現したら、正解に対する再現率は約49%だった
 tags:
   - Python
   - 静的解析
@@ -7,11 +7,13 @@ tags:
   - AIエージェント
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-04T10:49:31+09:00'
+id: 2442e50dc7cb3fc79b6b
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 既存テストから取り出した178件の期待値に、6つの実装が全部通りました。その直後、独立した正解データで静的解析の再現率を測ると、約49%。AIエージェントと進めていた多言語への書き換えで、比べる基準を取り違えていたことが見えてきました。[今回の公開採点基準](https://github.com/ishizakahiroshi/omitnix/blob/main/rewrite/truth/README.md)
