@@ -9,6 +9,7 @@ on:
     paths-ignore:
       - '.github/workflows/publish.yml'
       - '.github/workflows/publish-one.yml'
+      - '.github/workflows/publish-disk-storage.yml'
   workflow_dispatch:
 
 permissions:
