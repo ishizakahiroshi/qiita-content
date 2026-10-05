@@ -1,7 +1,7 @@
 {
   "article_key": "20261005-disk-storage",
   "account": "ishizakahiroshi",
-  "state": "published",
+  "state": "verified-http",
   "item_id": "609786acea2d1502382b",
   "source_repo": "ishizakahiroshi/doxguard",
   "source_sha": "229d38a35b8a88c0e145268713b89668ff2c807a",
@@ -16,5 +16,7 @@
     "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/03_illustration.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/04_fig-flow.png"
   ],
-  "url": "https://qiita.com/ishizakahiroshi/items/609786acea2d1502382b"
+  "url": "https://qiita.com/ishizakahiroshi/items/609786acea2d1502382b",
+  "verified_at": "2026-10-05T04:28:53.175Z",
+  "visual_acceptance": "pending-browser"
 }
