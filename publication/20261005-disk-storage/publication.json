@@ -1,22 +1,19 @@
 {
   "article_key": "20261005-disk-storage",
   "account": "ishizakahiroshi",
-  "state": "verified-http",
+  "state": "unknown",
   "item_id": "609786acea2d1502382b",
   "source_repo": "ishizakahiroshi/doxguard",
-  "source_sha": "cf852eda99feea7a7f7f431238420750b44fb34a",
+  "source_sha": "229d38a35b8a88c0e145268713b89668ff2c807a",
   "basename": "20261005-disk-build-storage",
-  "reviewed_sha": "cf852eda99feea7a7f7f431238420750b44fb34a",
-  "run_id": "37263266427",
+  "reviewed_sha": "229d38a35b8a88c0e145268713b89668ff2c807a",
+  "run_id": "37263658527",
   "confirmed_body_sha256": "a91580769f534060bda81dae1ce1492b1dda7baf51645afbf050ecd04f26ddde",
-  "pending_body_sha256": "a91580769f534060bda81dae1ce1492b1dda7baf51645afbf050ecd04f26ddde",
+  "pending_body_sha256": "62c519b051c972f91e600922d6b1d97870338a093a6a8e5eec5488751442cc91",
   "image_urls": [
-    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/01_hero.png",
-    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/02_infographic.png",
-    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/03_illustration.png",
-    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/04_fig-flow.png"
-  ],
-  "url": "https://qiita.com/ishizakahiroshi/items/609786acea2d1502382b",
-  "verified_at": "2026-10-05T04:23:26.825Z",
-  "visual_acceptance": "pending-browser"
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/01_hero.png",
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/02_infographic.png",
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/03_illustration.png",
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/04_fig-flow.png"
+  ]
 }

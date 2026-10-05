@@ -9,21 +9,19 @@ tags:
 private: false
 updated_at: '2026-10-05T13:23:24+09:00'
 id: 609786acea2d1502382b
-organization_url_name: null
+organization_url_name: ''
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
-![生成物を用途で仕分け、作業場所と保管場所を分ける](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/01_hero.png)
+![生成物を用途で仕分け、作業場所と保管場所を分ける](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/01_hero.png)
 Windowsの開発用Dドライブに残った空きは3.26 GiBでした。AIエージェントと開発キャッシュや出力の用途を調べ、Rustの単発ビルドと完成物の置き場を決めながら、ディスク容量を整理した記録です。
 
 既存の清掃道具を使うと、空きは25.97 GiBまで戻りました。その後、完成物の一部を外部へ保管し、未使用のビルド中間物も整理して27.15 GiBになりました。
 
 今回考えたのは、次の作業を終えたときに何を残すかです。作り直せる中間物、使うための完成物、判断材料として残す出力を区別し、確認できた範囲だけ片付けました。数値はすべて今回の個人環境での実測です。
 
-![空き容量の3段階と、残す・保管する・片付ける対象の要約](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/02_infographic.png)
+![空き容量の3段階と、残す・保管する・片付ける対象の要約](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/02_infographic.png)
 空き容量は3.26→25.97→27.15 GiBと変化しました。ソースや用途未確定のデータを残し、確認済みの完成物を保管し、作業を終えた専用の中間物を片付ける方針にしています。
 
 ## まず空きを戻してから、中身を見直しました
@@ -74,7 +72,7 @@ SHA256の照合に加えて、外部に置いたファイルを使う確認も�
 
 そこで同じソースを使い、D上の作業専用の一時targetへ切り替えると、15.38秒でビルドに成功しました。
 
-![外部への直接ビルドの失敗から、Dで生成して完成物だけ保管する方式へ切り替える](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/03_illustration.png)
+![外部への直接ビルドの失敗から、Dで生成して完成物だけ保管する方式へ切り替える](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/03_illustration.png)
 今回の経路では外部への直接ビルドが失敗し、D上の専用targetでは成功しました。この結果を受け、ビルドはDで行い、必要な完成物を外部へコピーする配置にしました。
 
 動画の保管と読み戻しに成功したことから、同じ場所でビルドも完了するとまでは言えませんでした。今回の試行では、完成物を置く用途と、生成途中のファイルを扱う用途を個別に確認することになりました。失敗の原因を推測で決めず、成功を確認できたD側で生成する手順を採用しています。
@@ -93,7 +91,7 @@ Cargoの公式仕様では、cargo cleanはCargoが生成したtarget内の成�
 
 今後の配置は、Dで作業単位のビルドを行い、必要な完成物だけ外部へ保管する形にしました。動作確認後に中間物を片付け、ソースと普段使う小さなexeはDに残します。
 
-![Dで生成し、完成物をコピーした後、照合・利用・復元の確認を条件に中間物を整理するフロー](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/04_fig-flow.png)
+![Dで生成し、完成物をコピーした後、照合・利用・復元の確認を条件に中間物を整理するフロー](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/04_fig-flow.png)
 完成物のコピー後に照合・利用・復元を確認し、確認できてから中間物の整理へ進みます。確認が済まない場合は、元データを残して確認を続ける流れです。
 
 この配置を扱うため、配置台帳と手動のInspect/Clean道具を用意しました。finishedになった作業の専用Cargo targetをIDで指定し、まずdry-runで対象を確認してからApplyへ進みます。
@@ -122,5 +120,25 @@ Cargoの公式仕様では、cargo cleanはCargoが生成したtarget内の成�
 保持したソースや変更があることも、全アプリの起動を確認したことにはなりません。未実施の試験は未実施のまま残し、今回の確認結果から言える範囲を広げすぎないようにしています。
 
 単発のビルドを終えたら、必要な完成物を保管し、使えることを確かめ、専用targetを片付ける。まずは、その作業の終わりに一緒に片付ける習慣から続けます。
+
+---
+
+📎 図解版・関連リンクをまとめたページがあります:
+https://ishizakahiroshi.com/articles/2026/2026-10-05_disk-build-storage/
+
+---
+
+※ ヘッダー画像とインフォグラフィックの絵は AI（画像生成）で作成しています。
+
+※ 本文の挿絵も AI（画像生成）で作成しています。
+
+書いた人: ishizakahiroshi
+群馬の北部で、保護猫2匹と暮らす、在宅エンジニア（何でも屋）
+https://ishizakahiroshi.com/
+https://github.com/ishizakahiroshi
+X（業務委託・各種相談はこちら）：
+https://x.com/ishizakahiroshi
+
+バックエンド・インフラ・AI連携まわりで、業務委託のご相談を受け付けています。フルリモートです。スポットや週2〜3時間からでも歓迎で、いろんな案件に携われたらうれしいです。こんな相談、歓迎です。
 
 <!-- dots-article:20261005-disk-storage -->
