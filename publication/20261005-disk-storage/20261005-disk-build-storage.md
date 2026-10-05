@@ -7,11 +7,13 @@ tags:
   - AI
   - ディスク容量
 private: false
-updated_at: '2026-10-05T13:23:24+09:00'
+updated_at: '2026-10-05T13:28:50+09:00'
 id: 609786acea2d1502382b
-organization_url_name: ''
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![生成物を用途で仕分け、作業場所と保管場所を分ける](https://raw.githubusercontent.com/ishizakahiroshi/doxguard/229d38a35b8a88c0e145268713b89668ff2c807a/docs/bot/article/disk-storage/01_hero.png)
