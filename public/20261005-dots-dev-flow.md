@@ -1,5 +1,5 @@
 ---
-title: "dotsへの開発依頼を連鎖にする 指示書とCIと独立レビューの実例"
+title: dotsへの開発依頼を連鎖にする 指示書とCIと独立レビューの実例
 tags:
   - AI
   - GitHub
@@ -7,11 +7,13 @@ tags:
   - テスト
   - ClaudeCode
 private: false
-updated_at: ''
-id: ''
+updated_at: '2026-10-05T10:30:48+09:00'
+id: 0ad648d4bf28b11739fe
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 この記事自体もdotsが執筆しています。事実整理・独立検収・公開は手元の担当です。
