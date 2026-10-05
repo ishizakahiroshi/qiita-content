@@ -1,0 +1,19 @@
+{
+  "article_key": "20261005-disk-storage",
+  "account": "ishizakahiroshi",
+  "state": "unknown",
+  "item_id": null,
+  "source_repo": "ishizakahiroshi/doxguard",
+  "source_sha": "cf852eda99feea7a7f7f431238420750b44fb34a",
+  "basename": "20261005-disk-build-storage",
+  "reviewed_sha": "cf852eda99feea7a7f7f431238420750b44fb34a",
+  "run_id": "37263266427",
+  "confirmed_body_sha256": null,
+  "pending_body_sha256": "a91580769f534060bda81dae1ce1492b1dda7baf51645afbf050ecd04f26ddde",
+  "image_urls": [
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/01_hero.png",
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/02_infographic.png",
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/03_illustration.png",
+    "https://raw.githubusercontent.com/ishizakahiroshi/doxguard/cf852eda99feea7a7f7f431238420750b44fb34a/docs/bot/article/disk-storage/04_fig-flow.png"
+  ]
+}
