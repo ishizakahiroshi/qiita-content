@@ -1,5 +1,5 @@
 ---
-title: "AIエージェントへの依頼をどう回すか 受け箱とMCPを考えている途中です"
+title: AIエージェントへの依頼をどう回すか 受け箱とMCPを考えている途中です
 tags:
   - AIエージェント
   - MCP
@@ -7,11 +7,13 @@ tags:
   - ClaudeCode
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-06T09:50:56+09:00'
+id: a552bb339bab8b08eb8b
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AIへの依頼を回す仕組みを、いま作っている途中です](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-10-06_whole-design-in-progress_hero.png)
