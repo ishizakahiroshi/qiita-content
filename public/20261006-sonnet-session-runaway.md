@@ -1,16 +1,18 @@
 ---
-title: 'Claude Codeに「検討したい」と頼んだら変更された。skillの範囲と道具を直した話'
+title: Claude Codeに「検討したい」と頼んだら変更された。skillの範囲と道具を直した話
 tags:
   - ClaudeCode
   - AIエージェント
   - 生成AI
   - 開発効率
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-06T19:21:32+09:00'
+id: 9298c353cdd3e04081b5
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![相談のメモを渡したところで、すでに工具を広げている助手](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-10-06_sonnet-session-runaway_hero.png)
