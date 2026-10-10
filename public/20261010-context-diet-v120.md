@@ -1,5 +1,5 @@
 ---
-title: "Claude Code の手順書を出そうとしたら、3週間前に出した版がもう古くなっていた"
+title: Claude Code の手順書を出そうとしたら、3週間前に出した版がもう古くなっていた
 tags:
   - ClaudeCode
   - Claude
@@ -7,11 +7,13 @@ tags:
   - LLM
   - プロンプト
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-10T13:36:27+09:00'
+id: ce0b03506c6455599946
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![古い手順書と新しい道筋を照らす机。context-diet 1.2.0](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20261010-context-diet-v120_01_hero.png)
