@@ -3,20 +3,18 @@ title: AIにバグ修正を任せる前に、原因と修正方針を分けて�
 tags:
   - AIエージェント
   - バグ修正
-  - codex
+  - Codex
   - Rust
   - ソフトウェア開発
 private: false
 updated_at: '2026-10-18T05:20:03+09:00'
 id: 535ffbd1bcd379494f35
-organization_url_name: null
+organization_url_name: ''
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
-![原因と修正方針を分けて確かめる](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/01-hero.png)
+![原因と修正方針を分けて確かめる](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/5d3766917f9e432794fbf068f48cc2c12708a738/public/20261018-bugfix-delegation-rework/01-hero.png)
 
 先に、結論を3行で書きます。
 
@@ -24,7 +22,12 @@ agreed_posting_campaign_term: false
 今回の手戻りには、渡した方針の不足と、修正候補の実装ミスが重なっていました。  
 委託前に証拠・対象範囲・確認ケースを揃え、不明点は調査として渡す形を考えています。
 
-![原因の把握、修正方針の確認、実装・検証を分ける](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/02-infographic.png)
+![原因の把握、修正方針の確認、実装・検証を分ける](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/5d3766917f9e432794fbf068f48cc2c12708a738/public/20261018-bugfix-delegation-rework/02-infographic.png)
+
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-18_bugfix-delegation-rework/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
 
 ## 軽い修正のつもりが、終わらない
 
@@ -38,7 +41,7 @@ many-ai-cliは、複数のAIコーディングCLIセッションの承認管理�
 
 途中で作業を止め、何を変え、どこで判断を誤ったのか、図付きHTMLで説明してもらいました。そこで問い直したのが、「修正指示が足りなかったのか、子の実装に問題があったのか」です。
 
-![修正を重ねる途中で立ち止まり、前提を見直す場面](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/03-illustration.png)
+![修正を重ねる途中で立ち止まり、前提を見直す場面](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/5d3766917f9e432794fbf068f48cc2c12708a738/public/20261018-bugfix-delegation-rework/03-illustration.png)
 
 修正を足し続ける前に、目的と現在地を並べ直しました。委託の是非と、委託後の進め方は分けて見る必要がありました。
 
@@ -68,7 +71,7 @@ many-ai-cliは、複数のAIコーディングCLIセッションの承認管理�
 
 開始を確認したターンが続いていれば、無出力でもrunningを保ちます。対応する終了や中断で保持を解除し、既存の出力・承認待ち判定へ戻します。承認待ちは従来どおり優先し、古い終了で次のターンを止めないことも確認します。
 
-![旧経路と、providerの作業中状態を保持する採用経路](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/04-state-flow.png)
+![旧経路と、providerの作業中状態を保持する採用経路](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/5d3766917f9e432794fbf068f48cc2c12708a738/public/20261018-bugfix-delegation-rework/04-state-flow.png)
 
 画面側に別の終了判定や新しい通信を増やさず、Hubが渡す状態を直しました。無出力と作業中を別々に持つことが、今回採用した方針です。
 
