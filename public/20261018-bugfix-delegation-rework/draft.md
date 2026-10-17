@@ -24,6 +24,11 @@ ignorePublish: false
 
 ![原因の把握、修正方針の確認、実装・検証を分ける](02-infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-18_bugfix-delegation-rework/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 ## 軽い修正のつもりが、終わらない
 
 複数のAI CLIをまとめて扱う個人開発の[many-ai-cli](https://github.com/ishizakahiroshi/many-ai-cli)で、黄色の停止表示が気になりました。「作業が止まったが、まだ開いていない」という印なのに、開くと処理中のことがあったのです。対象はRust版でした。
