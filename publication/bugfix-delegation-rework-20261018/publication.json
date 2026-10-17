@@ -1,7 +1,7 @@
 {
   "article_key": "bugfix-delegation-rework-20261018",
   "account": "ishizakahiroshi",
-  "state": "published",
+  "state": "verified-http",
   "item_id": "535ffbd1bcd379494f35",
   "source_repo": "ishizakahiroshi/qiita-content",
   "source_sha": "967ce8be47d2cff3b7211293c60b2580ebea1e38",
@@ -15,5 +15,7 @@
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/03-illustration.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/04-state-flow.png"
   ],
-  "url": "https://qiita.com/ishizakahiroshi/items/535ffbd1bcd379494f35"
+  "url": "https://qiita.com/ishizakahiroshi/items/535ffbd1bcd379494f35",
+  "verified_at": "2026-10-17T20:20:05.844Z",
+  "visual_acceptance": "pending-browser"
 }
