@@ -1,14 +1,14 @@
 {
   "article_key": "codex-status-contradictions-20261018",
   "account": "ishizakahiroshi",
-  "state": "unknown",
-  "item_id": null,
+  "state": "published",
+  "item_id": "5511f41b19748a1f5bfb",
   "source_repo": "ishizakahiroshi/qiita-content",
   "source_sha": "0091d4453409b91be0356858bf65b57fd87017dd",
   "basename": "codex-status-contradictions-20261018",
   "reviewed_sha": "0091d4453409b91be0356858bf65b57fd87017dd",
   "run_id": "39078991942",
-  "confirmed_body_sha256": null,
+  "confirmed_body_sha256": "1b46404df6a320f1b894a8042de7c65aae481b1b723c0ae1fe7b4b4e74d9c5d4",
   "pending_body_sha256": "1b46404df6a320f1b894a8042de7c65aae481b1b723c0ae1fe7b4b4e74d9c5d4",
   "image_urls": [
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/01-hero.png",
@@ -16,5 +16,6 @@
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/03-status-sequence.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/04-illustration.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/05-user-actions.png"
-  ]
+  ],
+  "url": "https://qiita.com/ishizakahiroshi/items/5511f41b19748a1f5bfb"
 }

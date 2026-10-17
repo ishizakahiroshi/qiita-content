@@ -1,15 +1,17 @@
 ---
 title: 「もう何もしなくていい」が何度も変わる。Codexとのやり取りをIssueにした
 tags:
-  - Codex
+  - codex
   - AI
   - GitHub
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-18T08:26:19+09:00'
+id: 5511f41b19748a1f5bfb
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![01 終わらない終了確認](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/01-hero.png)
