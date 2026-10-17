@@ -1,18 +1,19 @@
 {
   "article_key": "bugfix-delegation-rework-20261018",
   "account": "ishizakahiroshi",
-  "state": "unknown",
-  "item_id": null,
+  "state": "published",
+  "item_id": "535ffbd1bcd379494f35",
   "source_repo": "ishizakahiroshi/qiita-content",
   "source_sha": "967ce8be47d2cff3b7211293c60b2580ebea1e38",
   "reviewed_sha": "967ce8be47d2cff3b7211293c60b2580ebea1e38",
   "run_id": "39066231131",
-  "confirmed_body_sha256": null,
+  "confirmed_body_sha256": "a2c5cc835a3be0fffec26bda15f7dd55feed95d3f95c579ccd7042e9679fde2b",
   "pending_body_sha256": "a2c5cc835a3be0fffec26bda15f7dd55feed95d3f95c579ccd7042e9679fde2b",
   "image_urls": [
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/01-hero.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/02-infographic.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/03-illustration.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/04-state-flow.png"
-  ]
+  ],
+  "url": "https://qiita.com/ishizakahiroshi/items/535ffbd1bcd379494f35"
 }

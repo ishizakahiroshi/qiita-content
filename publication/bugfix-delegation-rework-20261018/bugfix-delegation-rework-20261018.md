@@ -3,15 +3,17 @@ title: AIにバグ修正を任せる前に、原因と修正方針を分けて�
 tags:
   - AIエージェント
   - バグ修正
-  - Codex
+  - codex
   - Rust
   - ソフトウェア開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-18T05:20:03+09:00'
+id: 535ffbd1bcd379494f35
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![原因と修正方針を分けて確かめる](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/967ce8be47d2cff3b7211293c60b2580ebea1e38/public/20261018-bugfix-delegation-rework/01-hero.png)
