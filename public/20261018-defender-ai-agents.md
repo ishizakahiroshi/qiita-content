@@ -100,7 +100,7 @@ Get-MpPerformanceReport -Path $etl -TopProcesses 10 -TopExtensions 10 -TopFiles 
 | 作業ツリー | 0.33 秒 | 542 |
 | その他 | 1.04 秒 | 未集計 |
 
-![対策前の場所ごとの検査時間](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/04_2026-10-18_defender-ai-agents_fig-before.png)
+![対策前の場所ごとの検査時間](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/04_2026-10-18_defender-ai-agents_fig-before-v2.png)
 
 あとで除外した grok と Codex の 8 フォルダだけで、6.93 秒、482 回。合計 10.9 秒の約 6 割でした。Claude Code の会話記録は many-ai-cli の作業用フォルダに含まれますが、その分だけを取り出して測ってはいません。
 
