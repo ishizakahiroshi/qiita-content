@@ -11,6 +11,7 @@ on:
       - '.github/workflows/publish-one.yml'
       - '.github/workflows/publish-bugfix-rework.yml'
       - '.github/workflows/publish-disk-storage.yml'
+      - '.github/workflows/publish-codex-status.yml'
   workflow_dispatch:
 
 permissions:
