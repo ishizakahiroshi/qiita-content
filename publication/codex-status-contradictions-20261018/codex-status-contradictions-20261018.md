@@ -1,20 +1,18 @@
 ---
 title: 「もう何もしなくていい」が何度も変わる。Codexとのやり取りをIssueにした
 tags:
-  - codex
+  - Codex
   - AI
   - GitHub
 private: false
 updated_at: '2026-10-18T08:26:19+09:00'
 id: 5511f41b19748a1f5bfb
-organization_url_name: null
+organization_url_name: ''
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
-![01 終わらない終了確認](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/01-hero.png)
+![01 終わらない終了確認](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/fa7b61744faa8f018742aac4b59bd7744f4cbaf7/public/20261018-codex-status-contradictions/01-hero.png)
 
 先に、結論を3行で書きます。
 
@@ -22,7 +20,12 @@ Codexに残作業を確認したら、完了・未完了・対応不要の説明
 残作業と担当を問い直し、矛盾を指摘したうえで、実際の発言をGitHub Issueにまとめて送りました。  
 手元で実装した対策と、それでも残った問題、次に試す案を分けて残します。
 
-![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/02-overview.png)
+![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/fa7b61744faa8f018742aac4b59bd7744f4cbaf7/public/20261018-codex-status-contradictions/02-overview.png)
+
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-18_codex-status-contradictions/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
 
 ## 終わったなら、閉じてよいか知りたかった
 
@@ -64,7 +67,7 @@ Windowsでmany-ai-cliを介してCodexを使い、黄色の停止表示に関す
 
 続けて、「削除は未完了のままです。」とも言われました。
 
-![03 AIの説明が変わった順序](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/03-status-sequence.png)
+![03 AIの説明が変わった順序](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/fa7b61744faa8f018742aac4b59bd7744f4cbaf7/public/20261018-codex-status-contradictions/03-status-sequence.png)
 
 図は会話での説明の変化です。実際の作業状態が、そのたびに変化したことを示すものではありません。
 
@@ -82,7 +85,7 @@ Windowsでmany-ai-cliを介してCodexを使い、黄色の停止表示に関す
 
 
 
-![同じ確認を往復する疲れ](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/04-illustration.png)
+![同じ確認を往復する疲れ](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/fa7b61744faa8f018742aac4b59bd7744f4cbaf7/public/20261018-codex-status-contradictions/04-illustration.png)
 
 ## Issueを送る前に、何をしたか
 
@@ -145,7 +148,7 @@ https://github.com/openai/codex/issues/54939
 
 読者が手元で取り入れるなら、実装を渡す前の記載チェックと、終了時の報告比較を別の確認として持つ方法があります。前者は今回導入済み、後者の形式は次に試す案です。
 
-![今回の対処と次回試す案の区別](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/05-user-actions.png)
+![今回の対処と次回試す案の区別](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/fa7b61744faa8f018742aac4b59bd7744f4cbaf7/public/20261018-codex-status-contradictions/05-user-actions.png)
 
 ## 未完了を「対応不要」に言い換えないでほしい
 
