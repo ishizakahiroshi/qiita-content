@@ -1,7 +1,7 @@
 {
   "article_key": "codex-status-contradictions-20261018",
   "account": "ishizakahiroshi",
-  "state": "published",
+  "state": "verified-http",
   "item_id": "5511f41b19748a1f5bfb",
   "source_repo": "ishizakahiroshi/qiita-content",
   "source_sha": "0091d4453409b91be0356858bf65b57fd87017dd",
@@ -17,5 +17,7 @@
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/04-illustration.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/0091d4453409b91be0356858bf65b57fd87017dd/public/20261018-codex-status-contradictions/05-user-actions.png"
   ],
-  "url": "https://qiita.com/ishizakahiroshi/items/5511f41b19748a1f5bfb"
+  "url": "https://qiita.com/ishizakahiroshi/items/5511f41b19748a1f5bfb",
+  "verified_at": "2026-10-17T23:26:21.243Z",
+  "visual_acceptance": "pending-browser"
 }
