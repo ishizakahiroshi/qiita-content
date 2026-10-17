@@ -22,6 +22,11 @@ Defender が何を検査しているかは、管理者の PowerShell で 2 分�
 
 ![測る、書き足す記録を見つける、範囲を絞る、同じ場所を比較する](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-10-18_defender-ai-agents_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-18_defender-ai-agents/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 Codex CLI、Claude Code、grok を Windows で並べていると、Antimalware Service Executable が数%から十数%で動き続けていました。不毛だな、と思いました。
 
 git のデータが頻繁に書き換わるせいかと思いましたが、測ると目立つ場所は別でした。
