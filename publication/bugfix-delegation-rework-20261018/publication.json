@@ -1,7 +1,7 @@
 {
   "article_key": "bugfix-delegation-rework-20261018",
   "account": "ishizakahiroshi",
-  "state": "verified-http",
+  "state": "verified-browser",
   "item_id": "535ffbd1bcd379494f35",
   "source_repo": "ishizakahiroshi/qiita-content",
   "source_sha": "967ce8be47d2cff3b7211293c60b2580ebea1e38",
@@ -17,5 +17,6 @@
   ],
   "url": "https://qiita.com/ishizakahiroshi/items/535ffbd1bcd379494f35",
   "verified_at": "2026-10-17T20:20:05.844Z",
-  "visual_acceptance": "pending-browser"
+  "visual_acceptance": "confirmed-title-body-and-four-images-in-Chrome",
+  "browser_verified_at": "2026-10-18T05:22:15.7610022+09:00"
 }
