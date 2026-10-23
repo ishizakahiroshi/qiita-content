@@ -1,5 +1,5 @@
 ---
-title: "AIでExcelをWeb化する前に考えたい、業務を増やさないための設計と棚卸し"
+title: AIでExcelをWeb化する前に考えたい、業務を増やさないための設計と棚卸し
 tags:
   - 生成AI
   - DX
@@ -7,11 +7,13 @@ tags:
   - 設計
   - 要件定義
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-23T16:04:29+09:00'
+id: ba016f466d1ab21e569f
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー：業務の流れの途中に増えるアプリと見直される工程](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-10-21_ai-business-inventory/01_2026-10-21_ai-bpr-qiita_hero.png)
