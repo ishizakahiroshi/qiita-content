@@ -29,6 +29,7 @@ agreed_posting_campaign_term: false
 時間に合わせて、読み方を選べます。
 
 - 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-23_php2shell-pwnescape-sla-availability/)
+- ラジオ感覚で聞きたい人向け：[AI 音声解説（YouTube・19分）](https://youtu.be/f4j__631NQk)
 - もっと深掘りしたい人は、このまま本文へどうぞ。
 
 PHPを更新したら、それで今回の対応は終わるのでしょうか。VPSのメンテナンスが終わったという連絡を受けたら、そこで動くWebアプリも安全になったと言ってよいのでしょうか。
