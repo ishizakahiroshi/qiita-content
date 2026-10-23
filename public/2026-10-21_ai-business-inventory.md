@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![インフォグラフィック：作る前にやめる・減らす・まとめる・残す](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-10-21_ai-business-inventory/02_2026-10-21_ai-bpr-qiita_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-21_ai-business-inventory/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 生成AIとAIエージェントのおかげで、フォームや一覧画面は以前よりずっと気軽に作れるようになりました。Claude CodeやCodexを触っていると、「このExcelもWebアプリにできるな」と考える場面は増えます。
 
 そこで一度、手を止めたい。そもそも、その業務は必要なのでしょうか。
