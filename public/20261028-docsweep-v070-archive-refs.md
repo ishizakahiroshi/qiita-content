@@ -1,5 +1,5 @@
 ---
-title: "作業メモを archive へ移すと参照が古いパスのまま残る問題を、docsweep v0.7.0 で移す前に止めて移した後に確かめる形にした"
+title: 作業メモを archive へ移すと参照が古いパスのまま残る問題を、docsweep v0.7.0 で移す前に止めて移した後に確かめる形にした
 tags:
   - docsweep
   - Python
@@ -7,11 +7,13 @@ tags:
   - ClaudeCode
   - AIエージェント
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-28T23:19:46+09:00'
+id: a51889e04e459ac3044e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![docsweep v0.7.0 の記事のヘッダー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/20261028-docsweep-v070-archive-refs-q01_hero.png)
