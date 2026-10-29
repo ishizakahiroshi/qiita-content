@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![インフォグラフィック：パスキー管理を載せても PIN は消えない。保管と自動入力は無料にある。PIN の原因は手元の環境](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-10-30_kinko-passkey-position/02_2026-10-30_kinko-passkey-position_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-10-30_kinko-passkey-position/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 パスキーでログインするたびに、4 桁の PIN を打っています。Chrome のパスキーでも Microsoft のものでも同じで、毎回ほんの少しだけ面倒です。
 
 最初は軽い質問でした。使っていない USB メモリにパスキーを入れて、挿すだけでログインできないか。そこから話がふくらんで、自作の金庫 kinko にパスワード管理の仕事まで任せたくなり、何が足りないのかを調べました。調べものは Claude Code に手伝ってもらいました。
