@@ -7,7 +7,7 @@ tags:
   - bitwarden
   - Go
 private: false
-updated_at: '2026-10-30T05:21:42+09:00'
+updated_at: '2026-10-30T05:24:17+09:00'
 id: a56d117cfd987acb25f9
 organization_url_name: null
 slide: false
