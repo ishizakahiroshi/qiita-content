@@ -1,17 +1,19 @@
 ---
-title: "自作の小さな金庫に、パスキー管理まで載せられるか。1Password・Bitwarden・KeePassXC と比べて、立ち位置を決める前に調べたこと"
+title: 自作の小さな金庫に、パスキー管理まで載せられるか。1Password・Bitwarden・KeePassXC と比べて、立ち位置を決める前に調べたこと
 tags:
-  - セキュリティ
+  - Security
   - パスキー
   - 1Password
-  - Bitwarden
+  - bitwarden
   - Go
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-30T05:21:42+09:00'
+id: a56d117cfd987acb25f9
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヒーロー：机の上の小さな金庫と閉じたノートPC、セキュリティキー](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-10-30_kinko-passkey-position/01_2026-10-30_kinko-passkey-position_hero.png)
