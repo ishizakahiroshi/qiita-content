@@ -1,17 +1,19 @@
 ---
-title: 'スマホのChatGPTとローカルAIをつなぐ。MCP接続の先に必要だった、承認・起動・検証の設計'
+title: スマホのChatGPTとローカルAIをつなぐ。MCP接続の先に必要だった、承認・起動・検証の設計
 tags:
   - MCP
   - AIエージェント
-  - Cloudflare
+  - cloudflare
   - Rust
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-10-31T18:46:01+09:00'
+id: 8bfb324e9d8869303fe6
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AIに仕事を渡す壁　スマホとローカルAIをつなぐ実験](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-10-30_ai-handoff_hero.png)
