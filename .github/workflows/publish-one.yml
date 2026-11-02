@@ -46,6 +46,7 @@ jobs:
           REVIEWED_SHA: ${{ inputs.reviewed_sha }}
         shell: node {0}
         run: |
+          (async () => {
           const fs = require('node:fs');
           const path = require('node:path');
           const crypto = require('node:crypto');
@@ -131,6 +132,7 @@ jobs:
             console.error(receipt.failure);
             process.exitCode = 1;
           }
+          })().catch(() => { console.error('runner-startup-failed'); process.exitCode = 1; });
       - name: Retain the update receipt
         if: always()
         uses: actions/upload-artifact@v4
