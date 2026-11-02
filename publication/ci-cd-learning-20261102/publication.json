@@ -1,14 +1,14 @@
 {
   "article_key": "ci-cd-learning-20261102",
   "account": "ishizakahiroshi",
-  "state": "unknown",
-  "item_id": null,
+  "state": "published",
+  "item_id": "430691b1ce54f0f5389a",
   "source_repo": "ishizakahiroshi/qiita-content",
   "source_sha": "600d687da935508ced936d8b7d18c51445d9b94f",
   "basename": "ci-cd-learning-20261102",
   "reviewed_sha": "600d687da935508ced936d8b7d18c51445d9b94f",
   "run_id": "41444336172",
-  "confirmed_body_sha256": null,
+  "confirmed_body_sha256": "d480457922ea7a6c2bd1ebce33632cba5280d1627623b6dffa7f571fa9aa78ca",
   "pending_body_sha256": "d480457922ea7a6c2bd1ebce33632cba5280d1627623b6dffa7f571fa9aa78ca",
   "image_urls": [
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/600d687da935508ced936d8b7d18c51445d9b94f/public/20261102-ci-cd-learning/01_2026-11-02_ci-cd-learning_hero.png",
@@ -17,5 +17,6 @@
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/600d687da935508ced936d8b7d18c51445d9b94f/public/20261102-ci-cd-learning/04_2026-11-02_ci-cd-learning_fig1.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/600d687da935508ced936d8b7d18c51445d9b94f/public/20261102-ci-cd-learning/05_2026-11-02_ci-cd-learning_illustration-clear-flow.png",
     "https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/600d687da935508ced936d8b7d18c51445d9b94f/public/20261102-ci-cd-learning/06_2026-11-02_ci-cd-learning_fig2.png"
-  ]
+  ],
+  "url": "https://qiita.com/ishizakahiroshi/items/430691b1ce54f0f5389a"
 }
