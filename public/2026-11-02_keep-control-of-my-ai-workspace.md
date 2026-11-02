@@ -1,5 +1,5 @@
 ---
-title: "AIツールを自己管理できるOSSにするために、認証・接続・日常操作の責務を分ける"
+title: AIツールを自己管理できるOSSにするために、認証・接続・日常操作の責務を分ける
 tags:
   - OSS
   - 個人開発
@@ -7,11 +7,13 @@ tags:
   - セルフホスト
   - 設計
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-02T20:27:51+09:00'
+id: 4df3cfda137e3a15b213
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AIは借りる。自分の道具は、自分で。](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/2026-11-02_keep-control-of-my-ai-workspace/hero.png)
