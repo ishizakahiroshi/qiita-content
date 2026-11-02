@@ -9,11 +9,9 @@ tags:
 private: false
 updated_at: '2026-11-02T21:24:17+09:00'
 id: 430691b1ce54f0f5389a
-organization_url_name: null
+organization_url_name: ''
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
 ![GitHub Actionsの検査を見直す前に、CI/CDの流れを整理した](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/600d687da935508ced936d8b7d18c51445d9b94f/public/20261102-ci-cd-learning/01_2026-11-02_ci-cd-learning_hero.png)
@@ -24,6 +22,9 @@ CI/CDの流れをつかむと、共通にする原則と個別に決める部分
 今回は設計と変更案の確認までで、実運用の高速化や本番移行はまだ検証していません。
 
 ![検査の目的、段階、対象版を整理する記事全体の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/600d687da935508ced936d8b7d18c51445d9b94f/public/20261102-ci-cd-learning/02_2026-11-02_ci-cd-learning_infographic.png)
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-02_ci-cd-learning/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
 
 ## そもそも、何のためにこんなに検査しているのか
 
