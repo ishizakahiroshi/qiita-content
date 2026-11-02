@@ -24,6 +24,11 @@ on:
         required: false
         type: boolean
         default: false
+      include_summary:
+        description: Add the fixed summary link only after its page and this existing item are verified
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -71,6 +76,7 @@ jobs:
           EXISTING_ITEM_ID: ${{ inputs.existing_item_id }}
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
           DIAGNOSE_ONLY: ${{ inputs.diagnose_only }}
+          INCLUDE_SUMMARY: ${{ inputs.include_summary }}
         shell: node {0}
         run: |
           const fs = require('node:fs');
@@ -206,6 +212,16 @@ jobs:
               body = body.replace(match[0], match[0].replace(match[1], url));
             }
             if (new Set(imageUrls).size !== 6) stop('Six distinct final image roles and numbers are required');
+            if (process.env.INCLUDE_SUMMARY === 'true') {
+              if (!id) stop('Summary link update requires the existing verified item ID');
+              const summaryUrl = 'https://ishizakahiroshi.com/articles/2026/2026-11-02_ci-cd-learning/';
+              const summary = await textFetch(summaryUrl);
+              if (!summary.includes(d.title) || !summary.includes(`https://qiita.com/${account}/items/${id}`)) stop('Summary page title or published item link differs');
+              const anchor = references[1][0].replace(references[1][1], imageUrls[1]);
+              if (!body.includes(anchor)) stop('Summary placement anchor is missing');
+              const guide = `- 少し忙しい人向け：[5分で読める要約版（個人サイト）](${summaryUrl})\n- もっと深掘りしたい人は、このまま本文へどうぞ。`;
+              body = body.replace(anchor, `${anchor}\n\n${guide}`);
+            }
             body = body.replaceAll(marker, '').trimEnd() + '\n\n' + marker + '\n';
             const data = {title:d.title, tags:d.tags, private:false, updated_at:remoteItem?.updated_at || '', id:id || '', organization_url_name:'', slide:false, ignorePublish:false};
             const prepared = matter.stringify(body, data);
