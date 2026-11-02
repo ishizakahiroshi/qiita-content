@@ -12,6 +12,7 @@ on:
       - '.github/workflows/publish-bugfix-rework.yml'
       - '.github/workflows/publish-disk-storage.yml'
       - '.github/workflows/publish-codex-status.yml'
+      - '.github/workflows/publish-ci-learning.yml'
   workflow_dispatch:
 
 permissions:
