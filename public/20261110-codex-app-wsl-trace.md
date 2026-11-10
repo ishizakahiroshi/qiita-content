@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![インフォグラフィック](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-10_codex-app-wsl-trace_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-10_codex-app-wsl-trace-logs/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 F ドライブの使用率が 92.7% になっていました。4 日前に整理して 64% まで下げたばかりのドライブです。
 
 毎日 13:15 に掃除のスクリプトが動いているので、また Rust のビルドの残骸だろうと思っていました。違いました。犯人は、使ってもいない Codex アプリでした。
