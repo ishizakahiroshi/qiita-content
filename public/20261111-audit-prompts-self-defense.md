@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-11_audit-prompts-self-defense_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-11_audit-prompts-self-defense/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 11月10日、AIエージェントにセキュリティ監査をさせるためのプロンプト集を、また見直しました。前回の大きな見直し（v1.0.0 を出した9月末）から6週間です。
 
 頼んだのは1行でした。「この監査プロンプト自身を見直してほしい。今のトレンドや攻撃手法から守る方法など、多角的に深く調査して対応」。返ってきた指摘を並べてみて、自分が数えていなかった場所があったことに気づきました。この記事は、そこをどう塞いだか、塞がなかったものは何か、の記録です。
