@@ -1,17 +1,19 @@
 ---
-title: "監査するAIエージェントを、監査対象から守る。git設定・テスト実行・埋め込み命令・報告の4経路を塞いだ設計判断"
+title: 監査するAIエージェントを、監査対象から守る。git設定・テスト実行・埋め込み命令・報告の4経路を塞いだ設計判断
 tags:
   - AIエージェント
-  - セキュリティ
+  - Security
   - プロンプトインジェクション
   - プロンプトエンジニアリング
   - 生成AI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-11T07:40:58+09:00'
+id: fb8c7fdad36fd587e618
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![監査するAI自身を守る](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-11_audit-prompts-self-defense_hero.png)
