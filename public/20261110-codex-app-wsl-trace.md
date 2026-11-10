@@ -1,17 +1,19 @@
 ---
-title: "Windows の Codex アプリで RdClientAutoTrace が数十GB溜まる原因と止め方"
+title: Windows の Codex アプリで RdClientAutoTrace が数十GB溜まる原因と止め方
 tags:
-  - Codex
+  - codex
   - WSL
   - OpenAI
   - Windows
   - トラブルシューティング
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-10T19:26:31+09:00'
+id: a599ce04b5483940100a
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![ヘッダー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-10_codex-app-wsl-trace_hero.png)
