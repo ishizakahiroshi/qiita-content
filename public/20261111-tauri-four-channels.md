@@ -1,5 +1,5 @@
 ---
-title: "Tauri のデスクトップアプリを GitHub Release・npm・winget・Microsoft Store へ配るときの構成とつまずき"
+title: Tauri のデスクトップアプリを GitHub Release・npm・winget・Microsoft Store へ配るときの構成とつまずき
 tags:
   - Tauri
   - npm
@@ -7,11 +7,13 @@ tags:
   - winget
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-11T23:22:49+09:00'
+id: 93d53a28a55d8dde7514
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![Tauri のアプリを 4 つの配布先へ配る](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-11_tauri-four-channels_hero.png)
