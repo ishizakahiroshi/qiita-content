@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-11_tauri-four-channels_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-11_tauri-four-channels/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 Tauri v2 で作っている CSV エディタを、初めて外へ配りました。配布先は GitHub Release、npm、winget、Microsoft Store の 4 つです。
 
 配布先を増やすと、ふつうは「配布先ごとにビルドして、配布先ごとに違うものが出る」方向へ転びます。それが嫌だったので、**ビルドは 1 回、配るのは全部同じファイル**という形に寄せました。その構成と、当日つまずいたところを書きます。
