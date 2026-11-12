@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-12_claude-md-audit-refutation_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-12_claude-md-audit-refutation/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 Claude Code が毎回読み込む指示（CLAUDE.md と、そこから取り込むファイル）が増えてきたので、1 か月ぶりに AI へ監査を頼みました。対象は 9 ファイル、829 行です。
 
 返ってきた指摘は 54 件。行番号と引用が付いていて、どれももっともらしく見えました。
