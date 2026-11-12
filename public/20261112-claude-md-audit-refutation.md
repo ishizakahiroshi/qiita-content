@@ -1,5 +1,5 @@
 ---
-title: "AI に CLAUDE.md を監査させるときは、直す前に反証させる。指摘 54 件のうち 12 件は直さなくてよかった"
+title: AI に CLAUDE.md を監査させるときは、直す前に反証させる。指摘 54 件のうち 12 件は直さなくてよかった
 tags:
   - ClaudeCode
   - CLAUDE.md
@@ -7,11 +7,13 @@ tags:
   - 生成AI
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-12T20:35:30+09:00'
+id: e46eb9c4a73af95d506e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![AI の監査の指摘を、直す前に反証する](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-12_claude-md-audit-refutation_hero.png)
