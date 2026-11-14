@@ -1,26 +1,24 @@
 ---
-title: Workers AI の無料枠の7割で止める。AIの振り分け役を月770円のVPSと Cloudflare で組む設計メモ
+title: "Workers AI の無料枠の7割で止める。AIの振り分け役を月770円のVPSと Cloudflare で組む設計メモ"
 tags:
-  - cloudflare
-  - workersai
-  - vps
+  - Cloudflare
+  - WorkersAI
+  - VPS
   - ClaudeCode
   - 個人開発
 private: false
 updated_at: '2026-11-14T17:52:25+09:00'
 id: 86662cb04a5607eb2f7e
-organization_url_name: null
+organization_url_name: ''
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-14_kechikechi-conductor_hero.png)
 
 先に、結論を3行で書きます。
 
-- 手元のPCに頼らず、VPSとクラウドのAIで開発を回す準備として、月770円のVPSを借りました。無料のOracle Cloudは、空きが出るのを待ちきれずやめました。
+- 最終的には手元のPCをやめて、VPSとクラウドのAIだけで開発を回すつもりです。その一歩目として、月770円のVPSを借りました（無料のOracle Cloudは空き待ちでやめました）。
 - 作業を誰に回すかは、作業を並べる看板（Cloudflare上）が10分ごとに決めます。判断は判断専用のモデル「Clef-flash」に任せ、行き先が書いてある作業では呼ばないので0円です。
 - 呼んだ量を数えて、無料枠（1日1万ニューロン）の7割で止めます。止めた分は「保留」に回すので、課金も、作業が勝手に流れることも起きません。
 
@@ -51,6 +49,18 @@ agreed_posting_campaign_term: false
 - **いずれ**: 手元のPCをやめて、VPS とクラウドだけで回す
 
 最初は VPS の上のAIに振り分けを考えさせるつもりでしたが、判断は看板の cron に持たせました。判断と手を分けたので、VPS が止まっても振り分けは止まりません。
+
+### では、VPS は最初から要ったのか
+
+今日の時点では、VPS が無くても看板と Devin の組み合わせは回ります。どちらもクラウドにあるからです。それでも先に借りたのは、最終的に手元の PC をやめるつもりだからです。手元をやめると、無人で動くAIの置き場がクラウドの中に要ります。
+
+クラウドのAIにも作業用の仮想環境（Devin や Claude Code のクラウド版など）はありますが、あれはそのAIの会社ごと、作業ごとに用意される場所で、自分の道具や設定を置いたまま使い続ける「自分の机」にはなりません。手元の PC の代わりになるのは自分で持ち続けられる机のほうなので、VPS にしました。
+
+| 段階 | 手元の PC | VPS | 振り分け |
+|---|---|---|---|
+| いま | 重い開発 | まだ何も動かしていない置き場 | Cloudflare の看板 |
+| 次 | claude -p が看板から取りにいく | claude -p が看板から取りにいく | Cloudflare の看板 |
+| いずれ | やめる | 無人のAIと開発の本体 | Cloudflare の看板 |
 ## 無料VPSをやめた理由
 
 最初は Oracle Cloud の Always Free で、看板を見張る小さなサーバーを立てるつもりでした。
