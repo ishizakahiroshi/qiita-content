@@ -1,17 +1,19 @@
 ---
-title: "Workers AI の無料枠の7割で止める。AIの振り分け役を月770円のVPSと Cloudflare で組む設計メモ"
+title: Workers AI の無料枠の7割で止める。AIの振り分け役を月770円のVPSと Cloudflare で組む設計メモ
 tags:
-  - Cloudflare
-  - WorkersAI
-  - VPS
+  - cloudflare
+  - workersai
+  - vps
   - ClaudeCode
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-14T17:30:32+09:00'
+id: 86662cb04a5607eb2f7e
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-14_kechikechi-conductor_hero.png)
