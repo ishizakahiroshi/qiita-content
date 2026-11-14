@@ -1,19 +1,17 @@
 ---
-title: Workers AI の無料枠の7割で止める。AIの振り分け役を月770円のVPSと Cloudflare で組む設計メモ
+title: "Workers AI の無料枠の7割で止める。AIの振り分け役を月770円のVPSと Cloudflare で組む設計メモ"
 tags:
-  - cloudflare
-  - workersai
-  - vps
+  - Cloudflare
+  - WorkersAI
+  - VPS
   - ClaudeCode
   - 個人開発
 private: false
 updated_at: '2026-11-14T18:06:17+09:00'
 id: 86662cb04a5607eb2f7e
-organization_url_name: null
+organization_url_name: ''
 slide: false
 ignorePublish: false
-posting_campaign_uuid: null
-agreed_posting_campaign_term: false
 ---
 
 ![](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-14_kechikechi-conductor_hero.png)
@@ -57,6 +55,8 @@ agreed_posting_campaign_term: false
 今日の時点では、VPS が無くても看板と Devin の組み合わせは回ります。どちらもクラウドにあるからです。それでも先に借りたのは、最終的に手元の PC をやめるつもりだからです。手元をやめると、無人で動くAIの置き場がクラウドの中に要ります。
 
 クラウドのAIにも作業用の仮想環境（Devin や Claude Code のクラウド版など）はありますが、あれはそのAIの会社ごと、作業ごとに用意される場所で、自分の道具や設定を置いたまま使い続ける「自分の机」にはなりません。手元の PC の代わりになるのは自分で持ち続けられる机のほうなので、VPS にしました。
+
+逆に、看板を VPS に置かず Cloudflare に置いているのは、認証まわりを自分で守り続けたくないからです。看板は外から開くページで、AIが書き込む入口（MCP）もあります。VPS に置くと、ログインの仕組み・鍵の扱い・サーバーの穴をずっと自分で見張ることになります。Cloudflare なら入口のログインは Cloudflare Access に任せられ、サーバーの更新も Cloudflare 側が持ちます。見張る範囲を小さくするための選択です。
 
 | 段階 | 手元の PC | VPS | 振り分け |
 |---|---|---|---|
