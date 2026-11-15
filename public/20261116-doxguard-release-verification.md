@@ -1,5 +1,5 @@
 ---
-title: "GitHub Releaseのattestationで詰まり、320pxの実画面確認も保留になった話"
+title: GitHub Releaseのattestationで詰まり、320pxの実画面確認も保留になった話
 tags:
   - Rust
   - GitHubActions
@@ -7,11 +7,13 @@ tags:
   - OSS
   - Security
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-16T02:17:51+09:00'
+id: 95991ceeb7e27c406bc0
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![doxguardの紹介ビジュアル](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-16_doxguard-release-verification_hero.png)
