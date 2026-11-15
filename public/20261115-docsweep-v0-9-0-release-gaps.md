@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-15_docsweep-v0-9-0-release-gaps_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-15_docsweep-v0-9-0-release-gaps/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 10月28日の v0.8.0 から2週間あまりたって、手元の develop には直した分が6コミット溜まっていました。次の版を出そうと、AI（Claude Code）に「release md 作ってほしい。ヌケモレもチェックしてね」と頼みました。release md は、そのリリース1回分の指定と手順と記録を1枚にまとめた作業メモです。
 
 この記事は、そのとき出てきた抜けを、確かめたコマンドと一緒に並べたものです。
