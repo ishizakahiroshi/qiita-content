@@ -25,6 +25,11 @@ agreed_posting_campaign_term: false
 
 ![記事全体の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-18_devin-rules-rethink_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-18_devin-rules-rethink-in-progress/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 ## 先に、確かめた数字だけ
 
 本文は経過の記録なので長いです。数字だけ知りたい方は、ここで足ります。どれも手元の環境で測った値です。
