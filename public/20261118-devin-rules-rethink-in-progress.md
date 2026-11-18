@@ -1,17 +1,19 @@
 ---
-title: "Devin CLIの決まりの上限（16KB/32KB）に合わせて、AGENTS.mdと承認ルールの渡し方を見直している記録"
+title: Devin CLIの決まりの上限（16KB/32KB）に合わせて、AGENTS.mdと承認ルールの渡し方を見直している記録
 tags:
   - Devin
   - ClaudeCode
-  - Codex
+  - codex
   - AIエージェント
   - 生成AI
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-18T16:17:25+09:00'
+id: cee2a8ea2be18f2ccee3
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 ![ヘッダー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-18_devin-rules-rethink_hero.png)
 
