@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要点を1枚にまとめた図](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-18_cloudflare-only-site-dashboard_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-18_cloudflare-only-site-dashboard/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 学校さがしの地図や、子ども向けの学習アプリを作っていたら、入口が 10 個になっていました。個人サイトを足すと 11 サイトです。
 
 「で、いま何人来てるの？」と思っても、Cloudflare の画面をサイトごとに開いて回るしかありません。11 回。夕方にそれをやっていて、さすがに嫌になりました。
