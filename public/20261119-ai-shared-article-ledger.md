@@ -26,6 +26,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要点を1枚にまとめた図](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-19_ai-shared-article-ledger_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-19_ai-shared-article-ledger/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 記事を書く AI が、いつの間にか 4 つになっていました。手元の Claude Code、スマホから頼む ChatGPT、それに Muse と Grok です。
 
 書く手が増えると、困ることが出てきます。「その話、先週もう下書きしてたよ」に、AI が気づけない。台帳は手元の PC にしか無かったからです。
