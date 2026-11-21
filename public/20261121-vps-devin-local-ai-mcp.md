@@ -25,6 +25,11 @@ agreed_posting_campaign_term: false
 
 ![記事全体の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-21_vps-devin_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-21_vps-devin-local-ai-mcp/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 ## 先に、構成と数字だけ
 
 自宅のPCとは別に、小さなVPSに「拾い手」を2つ置いています。Claude Code（`claude -p`）を動かすものと、Devin CLI（`devin -p`）を動かすものです。どちらも、Cloudflare Workers上の看板（自作のタスクボード）を見て、自分宛ての仕事を拾い、作業して、botの名義でDraft PRを出します。
