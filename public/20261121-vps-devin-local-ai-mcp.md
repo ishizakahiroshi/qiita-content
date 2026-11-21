@@ -1,17 +1,19 @@
 ---
-title: "VPSのDevin CLIに、手元のAIからMCPで仕事を頼む（拾い手の受付・決まりの配布・即時の知らせ）"
+title: VPSのDevin CLIに、手元のAIからMCPで仕事を頼む（拾い手の受付・決まりの配布・即時の知らせ）
 tags:
   - Devin
   - MCP
   - AIエージェント
-  - VPS
+  - vps
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-21T21:54:49+09:00'
+id: 033b59f3f9330c3a4b9b
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 ![ヘッダー画像](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-21_vps-devin_hero.png)
 
