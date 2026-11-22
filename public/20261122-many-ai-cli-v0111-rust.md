@@ -25,6 +25,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-22_many-ai-cli-v0111-rust_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-22_many-ai-cli-v0111-rust/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 ## 昨夜、v0.11.0 は出なかった
 
 夜の 22 時に v0.11.0 のタグを打ちました。20 分たっても終わらない。画面を見に行くと、ビルド 4 本のうち 3 本が赤くなっていました。
