@@ -1,17 +1,19 @@
 ---
-title: "Claude in Chrome のタブがメインの Chrome に増える問題を、プロフィール分けとコマンド起動で片付けた"
+title: Claude in Chrome のタブがメインの Chrome に増える問題を、プロフィール分けとコマンド起動で片付けた
 tags:
   - ClaudeCode
   - Chrome
-  - Codex
+  - codex
   - AIエージェント
   - 個人開発
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-22T13:21:58+09:00'
+id: 192e74f4a937c3422f54
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 ![ヒーロー：中央の大きな窓と、まわりに分かれて浮かぶ小さな窓](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-22_ai-chrome-profile-split_hero.png)
 
