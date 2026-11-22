@@ -33,6 +33,7 @@ jobs:
   publish:
     if: inputs.publish_approved
     runs-on: ubuntu-latest
+    environment: qiita-publish
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4

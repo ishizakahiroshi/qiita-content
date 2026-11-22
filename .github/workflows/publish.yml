@@ -25,6 +25,7 @@ concurrency:
 jobs:
   publish_articles:
     runs-on: ubuntu-latest
+    environment: qiita-publish
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
