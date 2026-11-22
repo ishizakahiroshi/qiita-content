@@ -25,6 +25,11 @@ agreed_posting_campaign_term: false
 
 ![記事の要約](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-22_ai-chrome-profile-split_infographic.png)
 
+時間に合わせて、読み方を選べます。
+
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-22_ai-chrome-profile-split/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 ## 昼の 12 時前、メインの Chrome に Claude のタブグループが 2 つあった
 
 前回、AI にブラウザを操作させると出る「デバッグを開始しました」の帯を消す話を書きました。今回は、その AI のブラウザ操作で困った、別の話です。
