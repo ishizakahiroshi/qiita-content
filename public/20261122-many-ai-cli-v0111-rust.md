@@ -1,5 +1,5 @@
 ---
-title: "many-ai-cli を Go から Rust へ全面移行した記録と、日常 CI を Windows だけにした代償（v0.11.1）"
+title: many-ai-cli を Go から Rust へ全面移行した記録と、日常 CI を Windows だけにした代償（v0.11.1）
 tags:
   - Rust
   - Go
@@ -7,11 +7,13 @@ tags:
   - OSS
   - AIエージェント
 private: false
-updated_at: ''
-id: ''
-organization_url_name: ''
+updated_at: '2026-11-22T11:20:17+09:00'
+id: 75918ceda22b9ff84d4c
+organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 ![ヒーロー：Go から Rust へ中身を入れ替えた many-ai-cli（v0.11.1）](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/01_2026-11-22_many-ai-cli-v0111-rust_hero.png)
 
