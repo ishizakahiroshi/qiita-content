@@ -25,6 +25,9 @@ CodeRabbitを足しても、この止まり方は防げません。役割が違�
 
 ![止まる原因、手元での回避手順、CodeRabbitとの役割の違いをまとめた図](https://raw.githubusercontent.com/ishizakahiroshi/qiita-content/main/public/images/02_2026-11-25_actions-quota-push-blocked_infographic.png)
 
+- 少し忙しい人向け：[5分で読める要約版（個人サイト）](https://ishizakahiroshi.com/articles/2026/2026-11-25_actions-quota-push-blocked/)
+- もっと深掘りしたい人は、このまま本文へどうぞ。
+
 ## 「pushできないんですけど」から始まった
 
 同じリポジトリで開発している人から、pushができなくなったと相談が来ました。手元で調べてもらうと、出てきたのはGitHubの支払いまわりの話です。CIのジョブがそもそも始まっていない、と。
